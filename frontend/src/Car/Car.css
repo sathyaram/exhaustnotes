@@ -10,6 +10,10 @@
   background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7a09871cc6c6262dabde21e05b8b3f1&auto=format&fit=crop&w=1950&q=80");
 }
 
+.fourth {
+  background-image: url('https://images.unsplash.com/photo-1508291441195-8134f170336f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85ec6d641fed07628e63f1d4778627b3&auto=format&fit=crop&w=1696&q=80');
+}
+
 .car-wrapper {
   display: flex;
   flex-direction: row;
@@ -22,16 +26,26 @@
   flex: 0 0 30%;
   padding: 30px;
   min-height: 300px;
-  background-size: cover;
+  margin-bottom: 70px;
+  background-size: 135%;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
   color:white;
   font-family: "Alfa Slab One", cursive;
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 300ms ease;
+}
+
+.car:hover {
+  box-shadow:20px 20px 70px 0 rgba(0,0,0,0.6);
 }
 
 .car:hover .carCredit {
+  opacity:1;
+}
+
+.car:hover .carSound {
   opacity:1;
 }
 
@@ -40,6 +54,8 @@
   position:absolute;
   top:-15px;
   left:-10px;
+  opacity:0;
+  transition: all 600ms ease-in-out;
 }
 
 .carText {
@@ -50,6 +66,8 @@
 }
 
 .carYear {
+  font-family: 'Rajdhani', sans-serif;
+  font-size:30px;
 }
 .carMake {
   font-size: 30px;

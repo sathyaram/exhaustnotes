@@ -1,13 +1,41 @@
 header {
   padding:30px;
+  text-align:center;
+  height:400px;
+  color:white;
 }
 
 h1 {
-  font-family: 'Kumar One Outline', cursive;
+  font-family: "Alfa Slab One", cursive;
   text-transform:uppercase;
+  padding-top:30px;
+}
+
+nav {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+nav ul {
+  display:flex;
+}
+
+nav a {
+  color:white;
+  display:inline-block;
+  padding:5px 15px;
+  font-size:20px;
 }
 
 h1 a {
+  letter-spacing: 2px;
   color:white;
   font-size:70px;
+  
+}
+
+h2 {
+  font-family: 'Rajdhani', sans-serif;
+  padding-top:5px;
 }

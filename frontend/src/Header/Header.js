@@ -23,7 +23,7 @@ class Header extends Component {
           </ul>
         </nav>
         <h1><Link to="/">Exhaust<br/>Notes</Link></h1>
-        <h2>An Engine Sound Library</h2>
+        <h2>A Car Engine Sound Library</h2>
         <Search />
       </header>
     );

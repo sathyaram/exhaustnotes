@@ -1,0 +1,38 @@
+.search {
+  position:relative;
+  max-width: 325px;
+  margin: 30px auto 0;
+
+}
+
+.search:before {
+  content:"\f001";
+  font-family: "Font Awesome 5 Free";
+  position:absolute;
+  color:#f2f2f2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  font-size:30px;
+  z-index:9;
+  text-shadow:0 0 10px rgba(0,0,0,0.3);
+  font-weight: 900;
+}
+
+.search input {
+  background:#131313;
+  border:none;
+  color:white;
+  padding:20px 20px 20px 35px;
+  width:100%;
+  font-size:20px;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius:10px;
+  box-shadow:0 3px 15px 1px rgba(0,0,0,0.3);
+  transition: all 300ms ease;
+  border:1px solid transparent;
+}
+
+.search:hover input {
+  border:1px solid white;
+}
