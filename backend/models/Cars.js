@@ -1,7 +1,7 @@
 const mongoose = require('../db/connection')
 const Schema = mongoose.Schema;
 
-const Car = new Schema({
+const Cars = new Schema({
   carYear: Number,
   carMake: String,
   carModel: String,
@@ -13,5 +13,5 @@ const Car = new Schema({
 })
 
 module.exports = {
-  Car: mongoose.model("Car", Car)
+  Cars: mongoose.model("Cars", Cars)
 }
