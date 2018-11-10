@@ -1,0 +1,13 @@
+header {
+  padding:30px;
+}
+
+h1 {
+  font-family: 'Kumar One Outline', cursive;
+  text-transform:uppercase;
+}
+
+h1 a {
+  color:white;
+  font-size:70px;
+}

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Car from '../Car/Car'
 
 class CarGrid extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      <main>
+        <Car />
+      </main>
     );
   }
 }

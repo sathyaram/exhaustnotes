@@ -1,0 +1,74 @@
+.first {
+  background-image: url("https://images.unsplash.com/photo-1449130015084-2d48a345ae62?ixlib=rb-0.3.5&s=bd50a2f97e21dc5e433217eec713ea15&auto=format&fit=crop&w=1953&q=80");
+}
+
+.second {
+  background-image: url("https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e786d9afafdce3d78f3126611e628383&auto=format&fit=crop&w=800&q=80");
+}
+
+.third {
+  background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7a09871cc6c6262dabde21e05b8b3f1&auto=format&fit=crop&w=1950&q=80");
+}
+
+.car-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.car {
+  flex: 0 0 30%;
+  padding: 30px;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  color:white;
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.car:hover .carCredit {
+  opacity:1;
+}
+
+.carSound {
+  font-size:26px;
+  position:absolute;
+  top:-15px;
+  left:-10px;
+}
+
+.carText {
+  font-size: 26px;
+  position: absolute;
+  bottom: -25px;
+  left: -15px;
+}
+
+.carYear {
+}
+.carMake {
+  font-size: 30px;
+}
+.carModel {
+  display: inline;
+  font-size:30px;
+}
+
+.carTrim {
+  display: inline;
+  color: #f42737;
+}
+
+.carCredit {
+  position:absolute;
+  right:10px;
+  top:10px;
+  font-size:14px;
+  opacity:0;
+  transition: all 600ms ease-in-out;
+}

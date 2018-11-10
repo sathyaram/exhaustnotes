@@ -9,12 +9,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
-      <Header />
-      <Switch>
-          <Route path="/faq" render={() => <Faq />}/>
-          <Route path="/" render={() => <CarGrid />}/>
-      </Switch>
+      <div className="page-wrapper">
+        <Header />
+        <Switch>
+            <Route path="/faq" render={() => <Faq />}/>
+            <Route path="/" render={() => <CarGrid />}/>
+        </Switch>
       </div>
     );
   }

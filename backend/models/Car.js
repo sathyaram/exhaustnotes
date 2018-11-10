@@ -8,7 +8,8 @@ const Car = new Schema({
   carImage: String,
   carSound: String,
   carTrim: String,
-  carCredit: String
+  carCredit: String,
+  carLink: String,
 })
 
 module.exports = {
