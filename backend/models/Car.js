@@ -7,4 +7,10 @@ const Car = new Schema({
   carYear: Number,
   carImage: String,
   carSound: String,
+  carTrim: String,
+  carCredit: String
 })
+
+module.exports = {
+  Car: mongoose.model("Car", Car)
+}
