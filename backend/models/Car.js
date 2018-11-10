@@ -2,12 +2,12 @@ const mongoose = require('../db/connection')
 const Schema = mongoose.Schema;
 
 const Car = new Schema({
+  carYear: Number,
   carMake: String,
   carModel: String,
-  carYear: Number,
+  carTrim: String,
   carImage: String,
   carSound: String,
-  carTrim: String,
   carCredit: String,
   carLink: String,
 })

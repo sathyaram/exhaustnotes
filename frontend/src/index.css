@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background: linear-gradient(180deg, rgb(14, 14, 14) 20%,rgba(61,61,61,1) 100%); 
+  background: linear-gradient(180deg, rgb(14, 14, 14) 20%,rgb(44, 44, 44) 100%); 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

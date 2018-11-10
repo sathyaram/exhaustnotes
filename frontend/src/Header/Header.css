@@ -1,41 +1,52 @@
 header {
-  padding:30px;
-  text-align:center;
-  height:400px;
-  color:white;
+  padding: 30px;
+  text-align: center;
+  color: white;
 }
 
 h1 {
   font-family: "Alfa Slab One", cursive;
-  text-transform:uppercase;
-  padding-top:30px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  transition: all 100ms linear;
+  transform: skewX(0deg);
+  letter-spacing: 2px;
+}
+
+h1:hover {
+  transform: skewX(-20deg);
+  letter-spacing: 14px;
+}
+
+h1 a {
+  color: white;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  padding-top: 5px;
 }
 
 nav {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   margin: 0 auto;
   display: inline-block;
 }
 
 nav ul {
-  display:flex;
+  display: flex;
 }
 
 nav a {
-  color:white;
-  display:inline-block;
-  padding:5px 15px;
-  font-size:20px;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 18px;
 }
 
-h1 a {
-  letter-spacing: 2px;
-  color:white;
-  font-size:70px;
-  
-}
-
-h2 {
-  font-family: 'Rajdhani', sans-serif;
-  padding-top:5px;
+nav a:hover {
+  text-shadow: 0 0 5px #f42737, 0 0 10px #f42737, 0 0 15px #f42737,
+    0 0 20px #ee5c68;
+  color: #f0c4c8;
 }

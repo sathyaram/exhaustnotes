@@ -20,14 +20,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 30px;
+  max-width:1080px;
+  margin: 0 auto;
 }
 
 .car {
   flex: 0 0 30%;
   padding: 30px;
   min-height: 300px;
-  margin-bottom: 70px;
-  background-size: 135%;
+  margin-bottom: 60px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -59,26 +61,23 @@
 }
 
 .carText {
-  font-size: 26px;
+  font-size: 36px;
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: -15px;
 }
 
 .carYear {
   font-family: 'Rajdhani', sans-serif;
-  font-size:30px;
+  font-size:40px;
 }
 .carMake {
-  font-size: 30px;
 }
 .carModel {
-  display: inline;
-  font-size:30px;
 }
 
 .carTrim {
-  display: inline;
+  font-size:20px;
   color: #f42737;
 }
 

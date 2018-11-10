@@ -29,7 +29,6 @@ class Car extends Component {
             <div className="carMake">Audi</div>
             <div className="carModel">TT </div>
             <div className="carTrim">RS</div>
-            <i class="fas fa-music" />
           </div>
           <div className="carCredit">
             <div className="carLink">@carlife-style</div>
