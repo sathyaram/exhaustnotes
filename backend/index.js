@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const parser = require('body-parser')
 const mongoose = require('mongoose')
-const Cars = require('./models/Cars')
+const Cars = require('./models/Car')
 const carRoutes = require('./controllers/car');
 
 

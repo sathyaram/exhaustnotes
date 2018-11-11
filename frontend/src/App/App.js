@@ -13,13 +13,15 @@ class App extends Component {
   
   render() {
     return (
-      <div className="page-wrapper">
+      <div className="pageWrapper">
         <Header />
-        <Switch>
-            <Route path="/submit" render={() => <CarForm />}/>
-            <Route path="/faq" render={() => <Faq />}/>
-            <Route path="/" render={() => <CarGrid />}/>
-        </Switch>
+        <main>
+          <Switch>
+              <Route path="/submit" render={() => <CarForm />}/>
+              <Route path="/faq" render={() => <Faq />}/>
+              <Route path="/" render={() => <CarGrid />}/>
+          </Switch>
+        </main>
         <Footer />
       </div>
     );

@@ -24,4 +24,11 @@ Love the sound of cars? Exhaust Notes is a collection of car sounds where you ca
 - Axios
 
 ### Schemas
-
+- carYear: Number,
+- carMake: String,
+- carModel: String,
+- carTrim: String,
+- carImage: String,
+- carSound: String,
+- carCredit: String,
+- carLink: String

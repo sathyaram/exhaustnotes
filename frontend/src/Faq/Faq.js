@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 
+import './Faq.css'
+
 class Faq extends Component {
   render() {
     return (
       <div className="faq">
-        <details className="plan-tool">
+        <details>
             <summary>What is this tool made with?</summary>
-            Flexbox, and so on.
+            <p>Flexbox, and so on.</p>
           </details>
-          <details className="plan-tool">
+          <details>
             <summary>How can I interact with it?</summary>
-            Because
+            <p>Because</p>
             </details>
       </div>
     );

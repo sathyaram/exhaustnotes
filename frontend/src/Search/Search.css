@@ -1,11 +1,11 @@
-.search {
+.carSearch {
   position:relative;
   max-width: 325px;
-  margin: 30px auto 0;
+  margin: 0 auto 60px;
 
 }
 
-.search:before {
+.carSearch:before {
   content:"\f001";
   font-family: "Font Awesome 5 Free";
   position:absolute;
@@ -19,7 +19,7 @@
   font-weight: 900;
 }
 
-.search input {
+.carSearch input {
   background:#131313;
   border:none;
   color:white;
@@ -33,6 +33,6 @@
   border:1px solid transparent;
 }
 
-.search:hover input {
+.carSearch:hover input {
   border:1px solid white;
 }

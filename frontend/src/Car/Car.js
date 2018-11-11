@@ -7,8 +7,8 @@ class Car extends Component {
     const cars = this.props.contents.map(car => {
       return (
         <div key={car._id} className="car" style={{backgroundImage: `url(${car.carImage})`}}>
+          
           <div className="carSound">
-            <i class="fas fa-volume-up" />
             <audio
     controls
     src={car.carSound}
@@ -29,7 +29,7 @@ class Car extends Component {
       )
     })
     return (
-      <div className="car-wrapper">
+      <div className="carGrid">
         {cars}
       </div>
     );

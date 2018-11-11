@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Car from "../Car/Car";
 import axios from "axios";
+import Search from '../Search/Search'
 
 class CarGrid extends Component {
   constructor(props) {
@@ -28,9 +29,10 @@ class CarGrid extends Component {
 
   render() {
     return (
-      <main>
+      <div className="carWrapper">
+        <Search />
         <Car contents={this.state.content}/>
-      </main>
+      </div>
     );
   }
 }

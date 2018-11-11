@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const Cars = require('../models/Cars')
+const Car = require('../models/Car')
 const mongoose = require('mongoose')
 
 // Get all Cars from DB
 router.get('/api/cars', (req, res) => {
-  Cars.find({}).then((items) => {
+  Car.find({}).then((items) => {
     console.log(items)
     res.json(items)
   })

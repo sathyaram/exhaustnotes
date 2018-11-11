@@ -8,19 +8,20 @@ h1 {
   font-family: "Alfa Slab One", cursive;
   text-transform: uppercase;
   padding-top: 30px;
-  transition: all 100ms linear;
-  transform: skewX(0deg);
-  letter-spacing: 2px;
-}
-
-h1:hover {
-  transform: skewX(-20deg);
-  letter-spacing: 14px;
 }
 
 h1 a {
   color: white;
   font-size: 70px;
+  transition: all 100ms linear;
+  display: inline-block;
+  transform: skewX(0deg);
+  letter-spacing: 2px;
+}
+
+h1 a:hover {
+  transform: skewX(-20deg);
+  letter-spacing: 14px;
 }
 
 h2 {

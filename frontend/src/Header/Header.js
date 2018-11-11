@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Search from '../Search/Search'
 import { Link } from 'react-router-dom';
 
 import './Header.css'
@@ -24,7 +23,7 @@ class Header extends Component {
         </nav>
         <h1><Link to="/">Exhaust<br/>Notes</Link></h1>
         <h2>A Car Engine Sound Library</h2>
-        <Search />
+        
       </header>
     );
   }

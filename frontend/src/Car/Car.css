@@ -1,34 +1,16 @@
-.first {
-  background-image: url("https://images.unsplash.com/photo-1449130015084-2d48a345ae62?ixlib=rb-0.3.5&s=bd50a2f97e21dc5e433217eec713ea15&auto=format&fit=crop&w=1953&q=80");
-}
-
-.second {
-  background-image: url("https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e786d9afafdce3d78f3126611e628383&auto=format&fit=crop&w=800&q=80");
-}
-
-.third {
-  background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7a09871cc6c6262dabde21e05b8b3f1&auto=format&fit=crop&w=1950&q=80");
-}
-
-.fourth {
-  background-image: url('https://images.unsplash.com/photo-1508291441195-8134f170336f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85ec6d641fed07628e63f1d4778627b3&auto=format&fit=crop&w=1696&q=80');
-}
-
-.car-wrapper {
+.carGrid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px;
-  max-width:1080px;
-  margin: 0 auto;
 }
+
 
 .car {
   flex: 0 0 30%;
   padding: 30px;
   min-height: 300px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -36,14 +18,24 @@
   color:white;
   font-family: "Alfa Slab One", cursive;
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: all 300ms ease;
+  transition: all 500ms ease;
+  box-shadow:20px 20px 80px 0 rgba(0,0,0,0.6);
 }
 
 .car:hover {
-  box-shadow:20px 20px 70px 0 rgba(0,0,0,0.6);
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.8), 
+              0 0 80px 0 rgba(0,0,0,0.8),
+              0 0 120px 0 rgba(0,0,0,0.8);
+  transform:scale(1.15);
+  flex-grow:1;
+  z-index:3;
 }
 
 .car:hover .carCredit {
+  opacity:0.3;
+}
+
+.car:hover .carCredit:hover {
   opacity:1;
 }
 
@@ -51,25 +43,45 @@
   opacity:1;
 }
 
+.car:hover .carText {
+  font-size:30px;
+  opacity:0.4;
+}
+
 .carSound {
   font-size:26px;
   position:absolute;
-  top:-15px;
-  left:-10px;
+  top:-4px;
+  left:50%;
+  transform:translateX(-50%);
   opacity:0;
   transition: all 600ms ease-in-out;
 }
 
+.carSound:hover audio {
+  opacity:1;
+}
+
+.carSound audio {
+  opacity:0.3;
+  width:420px;
+  transition: all 300ms ease;
+  transform: scale(0.6);
+}
+
+.carSound audio::-webkit-media-controls-play-button {
+  cursor:pointer;
+}
 .carText {
-  font-size: 36px;
+  font-size: 42px;
+  transition: all 300ms ease;
   position: absolute;
-  bottom: -20px;
+  bottom: -35px;
   left: -15px;
 }
 
 .carYear {
   font-family: 'Rajdhani', sans-serif;
-  font-size:40px;
 }
 .carMake {
 }
@@ -83,9 +95,36 @@
 
 .carCredit {
   position:absolute;
-  right:10px;
-  top:10px;
+  right:0px;
+  bottom:-15px;
   font-size:14px;
   opacity:0;
-  transition: all 600ms ease-in-out;
+  transition: all 300ms ease;
+}
+
+.carCredit a {
+  color:white;
+  display:inline-block;
+  padding:10px;
+}
+
+.carCredit a:hover {
+  color:#2390da;
+}
+
+
+@media screen and (max-width:898px) {
+  .car {
+    flex:0 0 46%;
+  }
+
+  .car:hover {
+    transform:scale(1.1);
+  }
+}
+@media screen and (max-width:480px) {
+  .car {
+    flex:0 0 100%;
+    margin-bottom:90px;
+  }
 }
