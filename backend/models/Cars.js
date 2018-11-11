@@ -12,6 +12,4 @@ const Cars = new Schema({
   carLink: String,
 })
 
-module.exports = {
-  Cars: mongoose.model("Cars", Cars)
-}
+module.exports = mongoose.model("Cars", Cars)

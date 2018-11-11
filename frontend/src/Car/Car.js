@@ -3,67 +3,34 @@ import "./Car.css";
 
 class Car extends Component {
   render() {
+    console.log(this.props.contents);
+    const cars = this.props.contents.map(car => {
+      return (
+        <div key={car._id} className="car" style={{backgroundImage: `url(${car.carImage})`}}>
+          <div className="carSound">
+            <i class="fas fa-volume-up" />
+            <audio
+    controls
+    src={car.carSound}
+    type="audio/mp3">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+          </div>
+          <div className="carText">
+            <div className="carYear">{car.carYear}</div>
+            <div className="carMake">{car.carMake}</div>
+            <div className="carModel">{car.carModel}</div>
+            <div className="carTrim">{car.carTrim}</div>
+          </div>
+          <div className="carCredit">
+            <a href={car.carLink} className="carLink">{car.carCredit}</a>
+          </div>
+        </div>
+      )
+    })
     return (
       <div className="car-wrapper">
-        <div className="car first">
-          <div className="carSound">
-            <i class="fas fa-volume-up" />
-          </div>
-          <div className="carText">
-            <div className="carYear">2018</div>
-            <div className="carMake">Ford</div>
-            <div className="carModel">Mustang </div>
-            <div className="carTrim">Shelby GT350</div>
-          </div>
-          <div className="carCredit">
-            <div className="carLink">@carlife-style</div>
-          </div>
-        </div>
-
-        <div className="car second">
-          <div className="carSound">
-            <i class="fas fa-volume-up" />
-          </div>
-          <div className="carText">
-            <div className="carYear">2016</div>
-            <div className="carMake">Audi</div>
-            <div className="carModel">TT </div>
-            <div className="carTrim">RS</div>
-          </div>
-          <div className="carCredit">
-            <div className="carLink">@carlife-style</div>
-          </div>
-        </div>
-
-        <div className="car third">
-          <div className="carSound">
-            <i class="fas fa-volume-up" />
-          </div>
-          <div className="carText">
-            <div className="carYear">2019</div>
-            <div className="carMake">Porsche</div>
-            <div className="carModel">Panamara </div>
-            <div className="carTrim">Turbo</div>
-          </div>
-          <div className="carCredit">
-            <div className="carLink">@carlife-style</div>
-          </div>
-        </div>
-
-        <div className="car fourth">
-          <div className="carSound">
-            <i class="fas fa-volume-up" />
-          </div>
-          <div className="carText">
-            <div className="carYear">2017</div>
-            <div className="carMake">Toyota</div>
-            <div className="carModel">86 </div>
-            <div className="carTrim">tR</div>
-          </div>
-          <div className="carCredit">
-              <div className="carLink">@carlife-style</div>
-            </div>
-        </div>
+        {cars}
       </div>
     );
   }
