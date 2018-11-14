@@ -4,6 +4,7 @@ import CarGrid from '../CarGrid/CarGrid'
 import CarForm from '../CarForm/CarForm'
 import Footer from '../Footer/Footer'
 import Faq from '../Faq/Faq'
+// import API from '../API/API'
 import { Route, Link, Switch } from 'react-router-dom';
 
 import './App.css';
@@ -17,6 +18,7 @@ class App extends Component {
         <Header />
         <main>
           <Switch>
+              {/* <Route path="/api" render={() => <API />}/> */}
               <Route path="/submit" render={() => <CarForm />}/>
               <Route path="/faq" render={() => <Faq />}/>
               <Route path="/" render={() => <CarGrid />}/>

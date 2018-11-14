@@ -17,7 +17,7 @@ class Header extends Component {
               <Link to="/submit">Submit A Sound</Link>
             </li>
             <li>
-              <Link to="/api">API</Link>
+              <a target="_blank" href="http://localhost:3500/api/cars">API</a>
             </li>
           </ul>
         </nav>

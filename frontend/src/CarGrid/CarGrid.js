@@ -8,7 +8,8 @@ class CarGrid extends Component {
     super(props);
 
     this.state = {
-      content: []
+      content: [],
+      searchQuery:''
     };
   }
 
@@ -23,6 +24,12 @@ class CarGrid extends Component {
     });
   };
 
+  updateSearchQuery = (e) => {
+    this.setState({
+      searchQuery: e.target.value
+    })
+  }
+
   componentDidMount() {
     this.getCars();
   }
@@ -30,8 +37,8 @@ class CarGrid extends Component {
   render() {
     return (
       <div className="carWrapper">
-        <Search />
-        <Car contents={this.state.content}/>
+        <Search searchQuery={this.state.searchQuery} updateQuery={this.updateSearchQuery}/>
+        <Car searchQuery={this.state.searchQuery} contents={this.state.content}/>
       </div>
     );
   }
