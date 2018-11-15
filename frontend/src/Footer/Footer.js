@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-      Copyright (C) 2018 | Made by Sathya Ram
+      © Copyright 2018 | Made by <a rel="noopener noreferrer" target="_blank" href="https://sathyaram.com">Sathya Ram</a>
       </footer>
     );
   }

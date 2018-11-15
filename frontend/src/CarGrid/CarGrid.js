@@ -14,7 +14,7 @@ class CarGrid extends Component {
   }
 
   getCars = () => {
-    axios.get("/api/cars").then(res => {
+    axios.get("https://exhaustnotes.herokuapp.com/api/cars").then(res => {
       console.log(res)
     this.setState({
       content: res.data

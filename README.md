@@ -1,16 +1,15 @@
 # ExhaustNotes
 An API for car exhaust sounds.
 
-
 ## Overview
-Love the sound of cars? Exhaust Notes is a collection of car sounds where you can search through a variety of different cars and hear their specific exhaust sound when their engine is revved.
+Love the sound of cars? ExhaustNotes is a collection of car sounds where you can search through a variety of different cars and hear their specific exhaust sound when their engine is revved.
 
 ### Features
 - Browse through a variety of car exhaust noises
 - Hear a cars specific exhaust, down to the trim level
 - Search for your favorite cars sound
 - Access any of the sounds, names or images via the open API
-
+- Responsive/Mobile Friendly
 
 ### Technologies
 - HTML
@@ -19,16 +18,21 @@ Love the sound of cars? Exhaust Notes is a collection of car sounds where you ca
 - Express
 - Mongoose
 - React
-- Bodyparser
 - Node
 - Axios
 
 ### Schemas
-- carYear: Number,
-- carMake: String,
-- carModel: String,
-- carTrim: String,
-- carImage: String,
-- carSound: String,
-- carCredit: String,
-- carLink: String
+- Car Year
+- Car Make
+- Car Model
+- Car Trim
+- Car Image
+- Car Sound
+- Car Credit
+- Car Link
+
+### Credits
+No Copyright Infringement Intended
+- GIPHY, for the header gif
+- Unsplash, for the card images
+- Youtube, for card sounds

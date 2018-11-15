@@ -18,6 +18,7 @@ h1 a {
   letter-spacing: 5px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /* Credit goes to Giphy/A24 for the gif used */
   background-image: url(https://media.giphy.com/media/JHsos369mkc0M/giphy.gif);
   background-size: cover;
   background-position: center center;
