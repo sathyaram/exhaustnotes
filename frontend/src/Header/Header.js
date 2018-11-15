@@ -17,7 +17,7 @@ class Header extends Component {
               <Link to="/submit">Submit A Sound</Link>
             </li>
             <li>
-              <a target="_blank" href="http://localhost:3500/api/cars">API</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://exhaustnotes.herokuapp.com/api/cars">API</a>
             </li>
           </ul>
         </nav>

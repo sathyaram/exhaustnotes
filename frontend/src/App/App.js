@@ -5,7 +5,7 @@ import CarForm from '../CarForm/CarForm'
 import Footer from '../Footer/Footer'
 import Faq from '../Faq/Faq'
 // import API from '../API/API'
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 

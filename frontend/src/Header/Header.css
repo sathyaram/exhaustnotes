@@ -11,16 +11,16 @@ h1 {
 }
 
 h1 a {
-  font-size: 110px;
+  font-size: 120px;
   transition: all 100ms linear;
   display: inline-block;
   transform: skewX(0deg);
   letter-spacing: 5px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: url(https://i.gifer.com/AiFc.gif);
+  background-image: url(https://media.giphy.com/media/JHsos369mkc0M/giphy.gif);
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   -webkit-text-stroke: 2px white;
 }
 

@@ -19,7 +19,7 @@
   font-family: "Alfa Slab One", cursive;
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: all 500ms ease;
-  box-shadow:20px 20px 80px 0 rgba(0,0,0,0.6);
+  box-shadow:30px 30px 80px 0 rgba(0,0,0,0.7);
 }
 
 .car:hover {
