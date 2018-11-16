@@ -25,6 +25,7 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
+/* From Hover.css */
 .car:before {
   content: "";
   position: absolute;
@@ -43,7 +44,6 @@
 }
 .car:hover:before, .car:focus:before, .car:active:before {
   right: 0;
-
 }
 
 .car:hover {

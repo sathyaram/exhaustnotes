@@ -23,13 +23,17 @@ h1 a {
   background-size: cover;
   background-position: center center;
   -webkit-text-stroke: 2px white;
+  transition: all 300ms ease;
   
 }
 
 h1 a:hover {
   transform: skewX(-20deg);
   letter-spacing: 14px;
-  text-shadow:0 0 15px rgba(255,255,255,0.5);
+  /* text-shadow:0 0 15px rgba(248, 50, 50, 0.5); */
+  filter:drop-shadow(0 0 15px rgba(248, 50, 50, 0.7));
+  -webkit-text-stroke: 3px white;
+  background-image:url(https://media.giphy.com/media/qvwrMe41PRJN6/giphy.gif);
 }
 
 h2 {
