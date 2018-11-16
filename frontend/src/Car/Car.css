@@ -20,6 +20,30 @@
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: all 500ms ease;
   box-shadow:30px 30px 80px 0 rgba(0,0,0,0.7);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+.car:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: -10px;
+  background:  #f42737;
+  height: 10px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.car:hover:before, .car:focus:before, .car:active:before {
+  right: 0;
+
 }
 
 .car:hover {
@@ -113,7 +137,7 @@
 }
 
 
-@media screen and (max-width:898px) {
+@media screen and (max-width:958px) {
   .car {
     flex:0 0 46%;
   }

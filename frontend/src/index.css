@@ -107,7 +107,8 @@ section {
 }
 
 body {
-  line-height: 1;
+	line-height: 1;
+	overflow-x:hidden;
   /* Background Image Taken from TransparentTextures.com */
   background: linear-gradient(rgba(14, 14, 14, 0.4), rgba(31, 31, 31, 0.4)),
 		url(/images/bgtexture.png);
@@ -147,3 +148,18 @@ code {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar
+{
+	background-color: #f42737;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+} 
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #f42737;
+} 

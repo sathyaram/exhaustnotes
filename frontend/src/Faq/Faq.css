@@ -10,8 +10,12 @@
   font-size:18px;
   border-bottom:1px solid white;
   border-top:1px solid white;
-  margin-bottom:10px;
+  margin-bottom:20px;
   border-radius:10px;
+}
+
+.faq summary:hover {
+  cursor:pointer;
 }
 
 .faq details[open] summary {

@@ -23,16 +23,20 @@ h1 a {
   background-size: cover;
   background-position: center center;
   -webkit-text-stroke: 2px white;
+  
 }
 
 h1 a:hover {
   transform: skewX(-20deg);
   letter-spacing: 14px;
+  text-shadow:0 0 15px rgba(255,255,255,0.5);
 }
 
 h2 {
   font-family: "Rajdhani", sans-serif;
   padding-top: 5px;
+  font-size:20px;
+  letter-spacing: 1px;
 }
 
 nav {
@@ -50,10 +54,30 @@ nav a {
   display: inline-block;
   padding: 5px 15px;
   font-size: 18px;
+  transition: all 200ms ease-in-out;
 }
 
-nav a:hover {
+nav ul li:nth-child(1) a:hover {
   text-shadow: 0 0 5px #f42737, 0 0 10px #f42737, 0 0 15px #f42737,
     0 0 20px #ee5c68;
   color: #f0c4c8;
+}
+
+nav ul li:nth-child(2) a:hover {
+  text-shadow: 0 0 5px #ffbe44, 0 0 10px #ffbe44, 0 0 15px #ffbe44,
+    0 0 20px #f5ec9c;
+  color: #ece3c3;
+}
+
+nav ul li:nth-child(3) a:hover {
+  text-shadow: 0 0 5px #30d454, 0 0 10px #30d454, 0 0 15px #30d454,
+    0 0 20px #30d454;
+  color: #c1eccb;
+}
+
+
+@media screen and (max-width:768px) {
+   h1 a{
+    font-size:70px;
+  }
 }

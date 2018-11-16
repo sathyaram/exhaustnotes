@@ -24,8 +24,13 @@ class CarForm extends Component {
           <li>The Car Link</li>
         </ul>
         
-        <p>Send all of the above information, nicely formatted, in an email to 
+        <p>Send all of the above information, nicely formatted, in an email to: 
           <a href="mailto:sathyatheram@gmail.com"> sathyatheram@gmail.com</a>
+        </p>
+        <br/>
+        <p>
+          If you have a suggestion, or want to help, I'm all ears! Throw a message
+          in the email you send me.
         </p>
       </p>
       <br/>
