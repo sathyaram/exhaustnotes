@@ -3,6 +3,8 @@ import Car from "../Car/Car";
 import axios from "axios";
 import Search from '../Search/Search'
 
+const api = process.env.REACT_APP_API
+
 class CarGrid extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +16,7 @@ class CarGrid extends Component {
   }
 
   getCars = () => {
-    axios.get("https://exhaustnotes.herokuapp.com/api/cars").then(res => {
+    axios.get(`${api}/api/cars`).then(res => {
       console.log(res)
     this.setState({
       content: res.data

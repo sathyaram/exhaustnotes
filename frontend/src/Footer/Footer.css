@@ -1,6 +1,6 @@
 footer {
   background-attachment: fixed;
-  background: linear-gradient(180deg, rgb(14, 14, 14) 0%,rgb(23, 23, 23) 100%);
+  background-color:black;
   color:white;
   padding:15px;
   font-size:12px;

@@ -34,6 +34,25 @@
   border:none;
 }
 
+.carForm a {
+  color:rgb(29, 204, 248);
+}
+
+.carForm p {
+  font-size:22px;
+}
+
+.carForm ul {
+  padding:15px 0;
+}
+
+.carForm li {
+font-weight:bold;
+padding:10px;
+font-size:26px;
+}
+
+
 .two-col {
   display:flex;
   justify-content: space-between;
