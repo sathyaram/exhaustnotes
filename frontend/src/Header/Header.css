@@ -85,3 +85,10 @@ nav ul li:nth-child(3) a:hover {
     font-size:70px;
   }
 }
+
+
+@media screen and (max-width:568px) {
+  h1 a{
+   font-size:40px;
+ }
+}
