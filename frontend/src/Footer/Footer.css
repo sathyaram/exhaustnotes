@@ -1,9 +1,8 @@
 footer {
   background-attachment: fixed;
-  background-color:black;
   color:white;
-  padding:15px;
-  font-size:12px;
+  padding:30px 15px;
+  font-size:14px;
   width:100%;
   text-align:center;
 }

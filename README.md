@@ -49,3 +49,26 @@ No Copyright Infringement Intended
 - Unsplash, for the card images
 - Youtube, for card sounds
 - TransparentTextures, for background image
+
+
+### Each Car Has:
+  - Car SVG
+  - Car Year Selector
+  - Car Make
+  - Car Model
+  - Car Trim
+  - Car Slider
+    - Image
+    - Link Photo Credit
+  
+
+### To Add
+- Lazy Loading Cars in Grid
+- Put MongoDB on Lightsail Server
+- User Form: Upload using axios/express: get the file in given route and save it somehow
+- Audio control styling, controls play/pause as cursor when hover
+- Red Outline around full car on hover
+- Photo Cred style update
+- Responsive layout update
+- Google Analytics/Tag Manager
+- Create ExhaustNotes email account

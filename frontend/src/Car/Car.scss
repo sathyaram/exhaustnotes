@@ -1,0 +1,214 @@
+@import '../App/Globals.scss';
+
+.carGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.car {
+  flex: 0 0 30%;
+  padding: 30px;
+  min-height: 300px;
+  margin-bottom: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  color:white;
+  font-family: $primary-f;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 500ms ease;
+  // box-shadow:30px 30px 80px 0 rgba(0,0,0,0.7);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+// /* From Hover.css */
+// .car:before {
+//   content: "";
+//   position: absolute;
+//   z-index: -1;
+//   left: 0;
+//   right: 100%;
+//   top: -10px;
+//   background: $red;
+//   height: 10px;
+//   -webkit-transition-property: right;
+//   transition-property: right;
+//   -webkit-transition-duration: 0.3s;
+//   transition-duration: 0.3s;
+//   -webkit-transition-timing-function: ease-out;
+//   transition-timing-function: ease-out;
+// }
+// .car:hover:before, .car:focus:before, .car:active:before {
+//   right: 0;
+// }
+
+.car::before, .car::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+  border: 8px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.car::before {
+  top: 0;
+  left: 0;
+}
+.car::after {
+  bottom: 0;
+  right: 0;
+}
+
+.car:hover::before, .car:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.car:hover::before {
+  border-top-color: #f42737;
+  border-right-color: #f42737;
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+.car:hover::after {
+  border-bottom-color: #f42737;
+  border-left-color: #f42737;
+  transition: border-color 0s ease-out 0.35s, width 0.25s ease-out 0.35s, height 0.15s ease-out 0.55s;
+}
+
+.car:hover {
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.8),
+              0 0 60px 0 rgba(0,0,0,0.8),
+              0 0 80px 0 rgba(0,0,0,0.8),
+              0 0 100px 0 rgba(0,0,0,0.8),
+              0 0 120px 0 rgba(0,0,0,0.8);
+  transform:scale(1.15);
+  flex-grow:1;
+  z-index:3;
+  cursor: pointer;
+}
+
+// .car:hover .carCredit {
+//   opacity:0.3;
+// }
+
+.car:hover .carCredit:hover {
+  opacity:1;
+}
+
+.car:hover .carSound {
+  opacity:1;
+}
+
+.car:hover .carText {
+  transform: scale(0.7);
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  left: -55px;
+  bottom: -45px;
+  border-bottom: 3px solid #f42737;
+}
+
+.carSound {
+  font-size:26px;
+  position:absolute;
+  top:-4px;
+  left:50%;
+  transform:translateX(-50%);
+  opacity:0;
+  transition: all 600ms ease-in-out;
+}
+
+.carSound:hover audio {
+  opacity:1;
+}
+
+.carSound audio {
+  opacity:0.3;
+  width:420px;
+  transition: all 300ms ease;
+  transform: scale(0.6);
+}
+
+.carSound audio::-webkit-media-controls-play-button {
+  cursor:pointer;
+}
+.carText {
+  font-size: 42px;
+  transition: all 300ms ease;
+  position: absolute;
+  bottom: -35px;
+  left: -25px;
+  transform: scale(1.1);
+  border-bottom: 3px solid transparent;
+}
+
+.carYear {
+  font-family: 'Bungee', sans-serif;
+  font-size: 20px;
+}
+.carMake {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Bungee', sans-serif;
+  width: fit-content;
+  margin: 7px 0;
+  border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.carModel {
+  
+}
+
+.carTrim {
+  font-size:20px;
+  color: #f42737;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-background-clip: text;
+  // background-image: linear-gradient(to left top, #f42737, #f54131, #f5552c, #f56729, #f47627);
+  // background-image: linear-gradient(to left top, #f42737, #f53833, #f5452e, #f4512b, #f45c27);
+}
+
+.carCredit {
+  position:absolute;
+  right:0px;
+  bottom:-15px;
+  font-size:14px;
+  opacity:0;
+  transition: all 300ms ease;
+}
+
+.carCredit a {
+  color:white;
+  display:inline-block;
+  padding:10px;
+}
+
+.carCredit a:hover {
+  color:#2390da;
+}
+
+
+@media screen and (max-width:958px) {
+  .car {
+    flex:0 0 46%;
+  }
+
+  .car:hover {
+    transform:scale(1.1);
+  }
+}
+@media screen and (max-width:480px) {
+  .car {
+    flex:0 0 100%;
+    margin-bottom:90px;
+  }
+}

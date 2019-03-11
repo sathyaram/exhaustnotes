@@ -11,17 +11,17 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/faq">FAQ</Link>
+              <Link to="/faq"><i class="fas fa-flag-checkered"></i> About</Link>
             </li>
             <li>
-              <Link to="/submit">Submit A Sound</Link>
+              <Link to="/submit"><i class="fas fa-microphone-alt"></i>  Submit</Link>
             </li>
-            <li>
+            {/* <li>
               <a target="_blank" rel="noopener noreferrer" href="https://exhaustnotes.herokuapp.com/api/cars">API</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
-        <h1><Link to="/">Exhaust<br/>Notes</Link></h1>
+        <h1 title="Exhaust Notes"><Link to="/">Exhaust<br/>Notes</Link></h1>
         <h2>A Car Engine Sound Library</h2>
         
       </header>

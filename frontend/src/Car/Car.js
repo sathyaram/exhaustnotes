@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./Car.css";
+import "./Car.scss";
+
 
 class Car extends Component {
   render() {
