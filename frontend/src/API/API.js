@@ -12,7 +12,7 @@ class API extends Component {
   }
 
   getCars =  () => {   
-    axios.get("http://localhost:3500/api/cars").then(res => {
+    axios.get("https://exhaustnotes.herokuapp.com/api/cars").then(res => {
       
       this.setState({
         apiResult: res.data

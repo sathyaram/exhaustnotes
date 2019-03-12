@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import AWSSoundPlayer from '../Player/Player'
 import "./Car.scss";
-
 
 class Car extends Component {
   render() {
-    const filteredCars = this.props.contents.filter(car => {
+      const filteredCars = this.props.contents.filter(car => {
       const query = this.props.searchQuery.toLowerCase() || "";
       const make = car.carMake.toLowerCase();
       const model = car.carModel.toLowerCase();
@@ -30,9 +30,12 @@ class Car extends Component {
             style={{ backgroundImage: `url(${car.carImage})` }}
           >
             <div className="carSound">
-              <audio controls src={car.carSound} type="audio/mp3">
+              {/* <audio controls src={car.carSound} type="audio/mp3">
                 Your browser does not support the <code>audio</code> element.
-              </audio>
+              </audio> */}
+              <AWSSoundPlayer
+                streamUrl={car.carSound}
+                preloadType="metadata" />
             </div>
             <div className="carText">
               <div className="carText-top">
