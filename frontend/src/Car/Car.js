@@ -35,10 +35,16 @@ class Car extends Component {
               </audio>
             </div>
             <div className="carText">
-              <div className="carYear">{car.carYear}</div>
-              <div className="carMake">{car.carMake}</div>
-              <div className="carModel">{car.carModel}</div>
-              <div className="carTrim">{car.carTrim}</div>
+              <div className="carText-top">
+                <div className="carYear">{car.carYear}</div>
+              </div>
+              <div className="carText-bottom">
+                <a className="carModelLink" href="https://www.audiusa.com/models/audi-tt-rs" target="_blank">
+                  <div className="carMake">{car.carMake}</div>
+                  <div className="carModel">{car.carModel}</div>
+                  <div className="carTrim">{car.carTrim}</div>
+                </a>
+              </div>
             </div>
             <div className="carCredit">
               <a href={car.carLink} className="carLink">

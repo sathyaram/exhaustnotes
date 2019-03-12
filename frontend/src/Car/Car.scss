@@ -10,7 +10,7 @@
 
 .car {
   flex: 0 0 30%;
-  padding: 30px;
+  padding: 10px;
   min-height: 300px;
   margin-bottom: 120px;
   background-size: cover;
@@ -108,13 +108,48 @@
   opacity:1;
 }
 
-.car:hover .carText {
-  transform: scale(0.7);
+.car:hover .carModelLink {
   background: rgba(0,0,0,0.7);
+}
+
+.carModelLink {
+  color: white;
+  display: block;
   padding: 20px;
-  left: -55px;
-  bottom: -45px;
-  border-bottom: 3px solid #f42737;
+  position: relative;
+  transition: all 300ms ease;
+
+}
+
+.car:hover .carModelLink:hover:before {
+  opacity: 1;
+  left: 0;
+}
+
+.carModelLink:before {
+  content: 'Go to car page ➞';
+  position: absolute;
+  top: -30px;
+  font-family: 'Rajdhani', sans-serif;
+  left: -30px;
+  opacity: 0;
+  color: white;
+  padding: 7px 5px;
+  font-size: 12px;
+  width:fit-content;
+  font-weight: bold;
+  transition: all 300ms ease;
+  background:rgba(#f42737, 0.9);
+
+}
+
+.car:hover .carModelLink:hover {
+  background: rgba(255,255,255,1);
+  color: black;
+}
+
+.car:hover .carModelLink:hover .carMake {
+  border-color: black;
 }
 
 .carSound {
@@ -134,6 +169,7 @@
 .carSound audio {
   opacity:0.3;
   width:420px;
+  display: none;
   transition: all 300ms ease;
   transform: scale(0.6);
 }
@@ -143,17 +179,41 @@
 }
 .carText {
   font-size: 42px;
-  transition: all 300ms ease;
+  transition: all 300ms ease;  
+}
+
+.car:hover .carText-top {
+  opacity: 1;
+}
+
+.car:hover .carText-bottom {
+  transform: scale(0.7);
+}
+
+.carText-top {
   position: absolute;
-  bottom: -35px;
+  top: -15px;
   left: -25px;
-  transform: scale(1.1);
-  border-bottom: 3px solid transparent;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.carText-bottom {
+  position: absolute;
+  bottom: -60px;
+  transform-origin: left;
+  left: -36px;
+  transition: transform 300ms ease;
+
 }
 
 .carYear {
   font-family: 'Bungee', sans-serif;
-  font-size: 20px;
+  font-size: 12px;
+  padding: 10px;
+  background: rgba(0,0,0,0.7);
+
+
 }
 .carMake {
   font-size: 24px;
@@ -170,6 +230,7 @@
 
 .carTrim {
   font-size:20px;
+  margin-top: 5px;
   color: #f42737;
   // -webkit-text-fill-color: transparent;
   // -webkit-background-clip: text;
@@ -197,7 +258,7 @@
 }
 
 
-@media screen and (max-width:958px) {
+@media screen and (max-width:1158px) {
   .car {
     flex:0 0 46%;
   }
