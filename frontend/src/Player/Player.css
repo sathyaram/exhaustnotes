@@ -1,0 +1,17 @@
+.progress-inner {
+  background-color: #fc561e;
+  height: 100%;
+  transition: width .2s ease-in;
+}
+
+.progress-container {
+  background-color: #ddd;
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rounded-left {
+  border-radius: 3px 0 0 3px;
+}
