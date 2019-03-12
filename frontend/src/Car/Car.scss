@@ -155,11 +155,20 @@
 .carSound {
   font-size:26px;
   position:absolute;
-  top:-4px;
-  left:50%;
-  transform:translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity:0;
   transition: all 600ms ease-in-out;
+}
+
+.carPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 18px 18px;
+  width: 100%;
 }
 
 .carSound:hover audio {

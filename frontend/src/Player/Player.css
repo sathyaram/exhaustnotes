@@ -1,5 +1,5 @@
 .progress-inner {
-  background-color: #fc561e;
+  background-color: #f42737;
   height: 100%;
   transition: width .2s ease-in;
 }
@@ -12,6 +12,29 @@
   cursor: pointer;
 }
 
+.sb-soundplayer-timer {
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
 .rounded-left {
   border-radius: 3px 0 0 3px;
+}
+
+.sb-soundplayer-btn {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sb-soundplayer-btn svg {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
 }

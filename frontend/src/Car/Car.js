@@ -29,14 +29,14 @@ class Car extends Component {
             className="car"
             style={{ backgroundImage: `url(${car.carImage})` }}
           >
-            <div className="carSound">
+            
               {/* <audio controls src={car.carSound} type="audio/mp3">
                 Your browser does not support the <code>audio</code> element.
               </audio> */}
-              <AWSSoundPlayer
-                streamUrl={car.carSound}
-                preloadType="metadata" />
-            </div>
+            <AWSSoundPlayer
+              streamUrl={car.carSound}
+              preloadType="metadata" />
+            
             <div className="carText">
               <div className="carText-top">
                 <div className="carYear">{car.carYear}</div>

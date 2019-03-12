@@ -6,12 +6,14 @@ import './Player.css'
 const AWSSoundPlayer = withCustomAudio(props => {
 
   return (
-    <div>
+    <div className="carSound">
       <PlayButton  {...props} />
-      <Timer {...props} />
-      <Progress className={'progress-container'}
-  innerClassName={'progress-inner'}{...props} />
-      <VolumeControl {...props} />
+      <div className="carPlayer">
+        <Timer {...props} />
+        <Progress className={'progress-container'}
+    innerClassName={'progress-inner'}{...props} />
+    </div>
+      {/* <VolumeControl {...props} /> */}
     </div>
   );
 });
