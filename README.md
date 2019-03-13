@@ -66,7 +66,7 @@ No Copyright Infringement Intended
 - Lazy Loading Cars in Grid
 - Put MongoDB on Lightsail Server
 - User Form: Upload using axios/express: get the file in given route and save it somehow
-- Audio control styling, controls play/pause as cursor when hover
+- [X]Audio control styling, controls play/pause as cursor when hover
 -[X] Red Outline around full car on hover
 - Photo Cred style update
 - Seperate year for just when hovered, and wrap Model/Make in link to car website (new field)

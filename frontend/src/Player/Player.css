@@ -1,3 +1,11 @@
+.carPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 18px 18px;
+  width: 100%;
+}
+
 .progress-inner {
   background-color: #f42737;
   height: 100%;
@@ -31,10 +39,18 @@
 }
 
 .sb-soundplayer-btn svg {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  bottom: -25px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  /* position: absolute;
+  top: -18px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  transition: opacity 300 ease;
+
+}
+
+.sb-soundplayer-btn svg:hover {
+  opacity: 1;
+
 }

@@ -27,7 +27,7 @@ class Car extends Component {
           <div
             key={car._id}
             className="car"
-            style={{ backgroundImage: `url(${car.carImage})` }}
+            style={{ backgroundImage: `url(${car.carImages[0].imagePath})` }}
           >
             
               {/* <audio controls src={car.carSound} type="audio/mp3">
@@ -38,16 +38,12 @@ class Car extends Component {
               preloadType="metadata" />
             
             <div className="carText">
-              <div className="carText-top">
                 <div className="carYear">{car.carYear}</div>
-              </div>
-              <div className="carText-bottom">
                 <a className="carModelLink" href="https://www.audiusa.com/models/audi-tt-rs" target="_blank">
                   <div className="carMake">{car.carMake}</div>
                   <div className="carModel">{car.carModel}</div>
                   <div className="carTrim">{car.carTrim}</div>
                 </a>
-              </div>
             </div>
             <div className="carCredit">
               <a href={car.carLink} className="carLink">

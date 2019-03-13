@@ -3,3 +3,17 @@ main {
   max-width:1080px;
   margin: 0 auto;
 }
+
+@media screen and (max-width:1250px) {
+
+  main {
+    padding: 10px 70px 30px;
+  }
+}
+
+@media screen and (max-width:680px) {
+
+  main {
+    padding: 10px 0 30px;
+  }
+}

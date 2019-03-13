@@ -7,7 +7,6 @@
   flex-wrap: wrap;
 }
 
-
 .car {
   flex: 0 0 30%;
   padding: 10px;
@@ -123,19 +122,19 @@
 
 .car:hover .carModelLink:hover:before {
   opacity: 1;
-  left: 0;
+  right: -25px;
 }
 
 .carModelLink:before {
   content: 'Go to car page ➞';
   position: absolute;
-  top: -30px;
+  bottom: -15px;
   font-family: 'Rajdhani', sans-serif;
-  left: -30px;
+  right: 30px;
   opacity: 0;
   color: white;
   padding: 7px 5px;
-  font-size: 12px;
+  font-size: 10px;
   width:fit-content;
   font-weight: bold;
   transition: all 300ms ease;
@@ -163,13 +162,7 @@
   transition: all 600ms ease-in-out;
 }
 
-.carPlayer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 25px 18px 18px;
-  width: 100%;
-}
+
 
 .carSound:hover audio {
   opacity:1;
@@ -188,58 +181,58 @@
 }
 .carText {
   font-size: 42px;
-  transition: all 300ms ease;  
-}
-
-.car:hover .carText-top {
-  opacity: 1;
-}
-
-.car:hover .carText-bottom {
-  transform: scale(0.7);
-}
-
-.carText-top {
-  position: absolute;
-  top: -15px;
-  left: -25px;
-  opacity: 0;
-  transition: opacity 300ms ease;
-}
-
-.carText-bottom {
   position: absolute;
   bottom: -60px;
   transform-origin: left;
   left: -36px;
   transition: transform 300ms ease;
+}
 
+.car:hover .carYear {
+  opacity: 1;
+  margin-bottom: 8px;
+}
+
+.car:hover .carText {
+  transform: scale(0.7);
 }
 
 .carYear {
   font-family: 'Bungee', sans-serif;
-  font-size: 12px;
-  padding: 10px;
-  background: rgba(0,0,0,0.7);
-
+  font-size: 14px;
+  padding: 6px 10px;
+  margin-bottom: 30px;
+  border-left: 2px solid #f42737;
+  opacity: 0;
+  transition: all 400ms ease;
 
 }
+
+.car:hover .carMake {
+  margin: 6px 0;
+}
+
 .carMake {
   font-size: 24px;
   text-transform: uppercase;
   font-family: 'Bungee', sans-serif;
   width: fit-content;
-  margin: 7px 0;
+  margin: 8px 0;
   border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
+    transition: margin 300ms ease;
 }
 .carModel {
   
 }
 
+.car:hover .carTrim {
+  margin-top: 6px;
+}
+
 .carTrim {
   font-size:20px;
-  margin-top: 5px;
+  margin-top: 8px;
   color: #f42737;
   // -webkit-text-fill-color: transparent;
   // -webkit-background-clip: text;
@@ -267,18 +260,31 @@
 }
 
 
-@media screen and (max-width:1158px) {
+@media screen and (max-width:1250px) {
   .car {
-    flex:0 0 46%;
+    flex:0 0 48%;
+    min-height: 320px;
   }
 
   .car:hover {
     transform:scale(1.1);
   }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:680px) {
   .car {
     flex:0 0 100%;
     margin-bottom:90px;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  .carText {
+    left: 0;
+
+    &:hover {
+      left: 0;
+    }
   }
 }

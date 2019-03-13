@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-       © 2019 // <a rel="noopener noreferrer" target="_blank" href="https://sathyaram.com">Sathya Ram</a>
+       © 2019 / <a rel="noopener noreferrer" target="_blank" href="https://sathyaram.com">Sathya Ram</a>
       </footer>
     );
   }

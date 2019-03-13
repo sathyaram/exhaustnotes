@@ -15,3 +15,13 @@ Cars.find({}).remove(() => {
       newCar.save(err => console.log(err))
   })
 })
+
+// const mongoose = require('../models/Car.js')
+// const Cars = mongoose.model('Car')
+// const carsData = require('./cars-data.json')
+
+// Cars.remove({}).then(() => {
+//   Cars.collection.insert(carsData).then(newCar => {
+//     console.log(newCar)
+//   })
+// }).catch(err => console.log(err))
