@@ -1,5 +1,6 @@
 const mongoose = require('../db/connection')
 const CarImage = require('./CarImage')
+const CarSound = require('./CarSound')
 const Schema = mongoose.Schema;
 
 const Car = new Schema({
@@ -8,7 +9,7 @@ const Car = new Schema({
   carModel: String,
   carTrim: String,
   carImages: [CarImage],
-  carSound: String,
+  carSound: [CarSound],
   carLink: String
 })
 

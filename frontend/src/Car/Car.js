@@ -1,8 +1,34 @@
 import React, { Component } from "react";
-import AWSSoundPlayer from '../Player/Player'
+import Player from '../Player/Player'
+import Slider from "react-slick";
 import "./Car.scss";
 
 class Car extends Component {
+
+  generateSlideContent(imageArray, id) {
+    var settings = {
+      dots: true,
+      arrows: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    const sliderContent = imageArray.map(image => {
+      return (
+      <div className="carSlide" >
+        <div class="carImage" style={{ backgroundImage: `url(${image.imagePath})` }}>
+          {/* <img src={image.imagePath} /> */}
+        </div>
+    </div>
+    )});
+    return (
+      <Slider {...settings} key={id}>
+        { sliderContent }
+      </Slider>
+    )
+  }
+
   render() {
       const filteredCars = this.props.contents.filter(car => {
       const query = this.props.searchQuery.toLowerCase() || "";
@@ -24,16 +50,18 @@ class Car extends Component {
       <div className="carGrid">
       {
         filteredCars.map(car => (
+
           <div
             key={car._id}
             className="car"
             style={{ backgroundImage: `url(${car.carImages[0].imagePath})` }}
           >
-            
+          {/* {this.generateSlideContent(car.carImages, car._id)} */}
               {/* <audio controls src={car.carSound} type="audio/mp3">
                 Your browser does not support the <code>audio</code> element.
               </audio> */}
-            <AWSSoundPlayer
+              
+            <Player
               streamUrl={car.carSound}
               preloadType="metadata" />
             

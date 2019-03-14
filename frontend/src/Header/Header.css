@@ -1,5 +1,5 @@
 header {
-  padding: 35px 30px;
+  padding: 60px 30px 30px;
   text-align: center;
   color: white;
   position: relative;
@@ -18,7 +18,6 @@ header {
 h1 {
   font-family: "Alfa Slab One", cursive;
   text-transform: uppercase;
-  padding-top: 30px;
 }
 
 h1 a {
@@ -55,8 +54,9 @@ h1 a:hover {
 h2 {
   font-family: 'Rajdhani', sans-serif;
   padding-top: 20px;
-  font-size:20px;
-  letter-spacing: 1px;
+  font-size:18px;
+  letter-spacing: 2px;
+  /* font-variant: small-caps; */
 }
 
 nav {
@@ -67,7 +67,6 @@ nav {
   z-index: 999;
   transform: skew(-5deg);
   transition: all .4s cubic-bezier(0.165,.84,.44,1) .2s;
-  
 }
 
 nav ul {
@@ -142,6 +141,15 @@ nav ul li:nth-child(3) a:hover {
 
 @media screen and (max-width:568px) {
   h1 a{
-   font-size:40px;
+   font-size:60px;
+ }
+
+ h2 {
+  padding-top: 10px;
+  font-size:16px;
+ }
+
+ header {
+    padding: 30px 30px 15px;
  }
 }

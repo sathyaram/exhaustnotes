@@ -75,12 +75,12 @@
 .car:hover::before {
   border-top-color: #f42737;
   border-right-color: #f42737;
-  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  transition: width 0.10s ease-out, height 0.10s ease-out 0.10s;
 }
 .car:hover::after {
   border-bottom-color: #f42737;
   border-left-color: #f42737;
-  transition: border-color 0s ease-out 0.35s, width 0.25s ease-out 0.35s, height 0.15s ease-out 0.55s;
+  transition: border-color 0s ease-out 0.30s, width 0.20s ease-out 0.30s, height 0.10s ease-out 0.50s;
 }
 
 .car:hover {
@@ -190,7 +190,7 @@
 
 .car:hover .carYear {
   opacity: 1;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .car:hover .carText {
@@ -199,12 +199,12 @@
 
 .carYear {
   font-family: 'Bungee', sans-serif;
-  font-size: 14px;
-  padding: 6px 10px;
+  font-size: 22px;
+  padding: 6px 22px;
   margin-bottom: 30px;
-  border-left: 2px solid #f42737;
+  border-left: 3px solid #f42737;
   opacity: 0;
-  transition: all 400ms ease;
+  transition: all 700ms ease;
 
 }
 
@@ -226,14 +226,27 @@
   
 }
 
+.car:hover .carModelLink:hover .carTrim {
+  color: #f42737;
+  transform: skew(0deg);
+  text-shadow: 0 0 15px rgba(244, 39, 55,0.3);
+} 
+
 .car:hover .carTrim {
   margin-top: 6px;
+  color: white;
+  text-shadow: 0 0 15px #f42737,
+  0 0 25px #f42737,
+  0 0 45px #f42737;
+  transform: skew(-15deg);
 }
 
 .carTrim {
   font-size:20px;
   margin-top: 8px;
   color: #f42737;
+  transition: all 500ms ease;
+
   // -webkit-text-fill-color: transparent;
   // -webkit-background-clip: text;
   // background-image: linear-gradient(to left top, #f42737, #f54131, #f5552c, #f56729, #f47627);
