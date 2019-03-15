@@ -8,3 +8,4 @@ const CarImage = new Schema({
 })
 
 module.exports = mongoose.model("CarImage", CarImage)
+module.exports.CarImageSchema = CarImage
