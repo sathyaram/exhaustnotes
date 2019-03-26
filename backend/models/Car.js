@@ -1,5 +1,5 @@
-const mongoose = require('../db/connection')
-const CarImage = require('./CarImage')
+const mongoose = require("../db/connection");
+const CarImage = require("./CarImage");
 const Schema = mongoose.Schema;
 
 const Car = new Schema({
@@ -7,11 +7,12 @@ const Car = new Schema({
   carMake: String,
   carModel: String,
   carTrim: String,
-  carImages: [CarImage.CarImageSchema],
+  carImages: String,
   carLink: String,
   carSound: String,
   carSoundCredit: String,
-  carSoundCreditLink: String
-})
+  carSoundCreditLink: String,
+  createdOn: { type: Date, default: Date.now }
+});
 
-module.exports = mongoose.model("Car", Car)
+module.exports = mongoose.model("Car", Car);
