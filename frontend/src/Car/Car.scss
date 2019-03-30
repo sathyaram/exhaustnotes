@@ -5,6 +5,16 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  &:hover {
+    > .car {
+      opacity: 0.7;
+    }
+  }
+
+  > .car:hover {
+    opacity: 1;
+  }
 }
 
 .car {
@@ -94,10 +104,6 @@
   z-index:3;
   cursor: pointer;
 }
-
-// .car:hover .carCredit {
-//   opacity:0.3;
-// }
 
 .car:hover .carCredit:hover {
   opacity:1;
@@ -243,7 +249,7 @@
 
 .carTrim {
   font-size:20px;
-  margin-top: 8px;
+  margin-top: 5px;
   color: #f42737;
   transition: all 500ms ease;
 

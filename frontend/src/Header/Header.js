@@ -23,7 +23,6 @@ class Header extends Component {
         </nav>
         <h1 title="Exhaust Notes"><Link to="/">Exhaust<br/>Notes</Link></h1>
         <h2>A Car Engine Sound Library</h2>
-        
       </header>
     );
   }
