@@ -41,20 +41,28 @@
   background: none;
   border: none;
   cursor: pointer;
+  
 }
 
 .sb-soundplayer-btn svg {
   width: 40px;
   height: 40px;
-  /* position: absolute;
-  top: -18px;
-  left: 50%;
-  transform: translateX(-50%); */
-  transition: opacity 300 ease;
+  margin: 20px;
+  transition: opacity 300ms ease;
 
 }
 
 .sb-soundplayer-btn svg:hover {
   opacity: 0.85;
+}
 
+
+@media screen and (max-width:680px) {
+  .sb-soundplayer-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0;
+  }
 }

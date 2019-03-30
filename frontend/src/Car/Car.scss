@@ -93,7 +93,8 @@
   transition: border-color 0s ease-out 0.30s, width 0.20s ease-out 0.30s, height 0.10s ease-out 0.50s;
 }
 
-.car:hover {
+.car:hover,
+.car:active {
   box-shadow: 0 0 40px 0 rgba(0,0,0,0.8),
               0 0 60px 0 rgba(0,0,0,0.8),
               0 0 80px 0 rgba(0,0,0,0.8),
@@ -297,6 +298,16 @@
   color:#2390da;
 }
 
+@media screen and (min-width:1980px) {
+  main {
+    max-width: 1480px !important;
+  }
+
+  .car {
+    flex: 0 0 24%;
+  }
+
+}
 
 @media screen and (max-width:1250px) {
   .car {
@@ -316,6 +327,10 @@
     &:hover {
       transform: scale(1);
     }
+  }
+
+  .carSound {
+    opacity: 1;
   }
 
   .carText {

@@ -17,7 +17,7 @@ class App extends Component {
       <div className="pageWrapper">
         {/* <Menu /> */}
         <Header />
-        <main>
+        <main id="main-content">
           <Switch>
               <Route path="/api" render={() => <API />}/>
               <Route path="/submit" render={() => <CarForm />}/>

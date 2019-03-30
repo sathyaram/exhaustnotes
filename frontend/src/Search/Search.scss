@@ -19,7 +19,6 @@
   max-width: 100%;
   /* border-bottom: 2px solid #f42737; */
 }
-
 /* .fixed-nav .inputWrapper:before, 
 .fixed-nav .inputWrapper:after {
   content: none;
@@ -135,8 +134,24 @@ input:focus {outline:0;}
 }
 
 @media screen and (max-width:568px) {
+  .carSearch {
+    top: 200px;
+    width: 100%;
+  }
+
+  .carSearch input {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:490px) {
 
   .carSearch {
-    top: 180px;
+    top: 150px;
   }
+
+  .fixed-nav .inputWrapper {
+    margin: 0;
+}
+
 }

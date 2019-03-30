@@ -60,18 +60,20 @@ No Copyright Infringement Intended
   - Car Slider
     - Image
     - Link Photo Credit
-  
 
-### To Add
-- Infinite Scroll of Cars + Searching the grid
+### For v1.0
 - Put MongoDB on Lightsail Server
 - Google Analytics/Tag Manager
 - Create ExhaustNotes email account
+- Buy and attach domain
 - Player Bug: when pause and scrub, starts clip over
+
+### For v2.0
+- Infinite Scroll of Cars + Searching the grid
+- Slider for each car, so there can be multiple images
+- Adding a 'Love' option for Cars to tally which cars users find best
+
+### For v3.0
+- User Submitted CarGrid via contribution
 - User Form: Upload using axios/express: get the file in given route and save it somehow
-- [X] Audio control styling, controls play/pause as cursor when hover
-- [X] Red Outline around full car on hover
-- [X] Photo Cred style update
-- [X] Seperate year for just when hovered, and wrap Model/Make in link to car website (new field)
-- [X] Responsive layout update -> padding left/right for responsive sizes
 
