@@ -74,7 +74,7 @@ class Car extends Component {
                 </a>
             </div>
             <div className="carCredit">
-              <a href="#"> John Mayer</a>
+              <a href={car.carImages[0].creditLink}>{car.carImages[0].creditText}</a>
               <a href={car.carLink} className="carLink" target="_blank">
                 {car.carCredit}
               </a>
