@@ -32,6 +32,22 @@ class Faq extends Component {
       color: '#e76d0c'
     }
 
+    let crimson = {
+      color: '#f42737'
+    }
+
+    let giphy = {
+      color: '#c64cec'
+    }
+
+    let reactsound = {
+      color: '#4fe7b7'
+    }
+
+    let youtube = {
+      color: '#ff0000'
+    }
+
     return (
       <div className="faq">
       <h3>What is ExhaustNotes?</h3>
@@ -56,6 +72,7 @@ class Faq extends Component {
             <br></br>
             <a rel="noopener noreferrer" href="https://flexbox.org/" style={flexbox}>Flexbox</a>
             <br></br>
+            
           </p>
           <p>
             <h4>Fonts</h4>
@@ -67,12 +84,21 @@ class Faq extends Component {
             <br></br>
           </p>
           <p>
+            <h4>Media</h4>
+            <a rel="noopener noreferrer" href="https://giphy.com" style={giphy}>Giphy</a>
+            <br></br>
+            <a rel="noopener noreferrer" href="https://youtube.com" style={youtube}>Youtube</a>
+            <br></br>
+            <a rel="noopener noreferrer" href="https://github.com/kosmetism/react-soundplayer" style={reactsound}>React SoundPlayer</a>
+            <br></br>
+          </p>
+          <p>
             <h4>Love From</h4>
-            <a rel="noopener noreferrer" href="https://ortizlu.com">Luis Ortiz</a>
+            <a rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
             <br></br>
-            <a rel="noopener noreferrer" href="#">Arun & Deva</a>
+            <a rel="noopener noreferrer" href="#" style={crimson}>Arun & Deva</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://generalassemb.ly">General Assembly</a>
+            <a rel="noopener noreferrer" href="https://generalassemb.ly" style={crimson}>General Assembly</a>
             <br></br>
           </p>
         </div>

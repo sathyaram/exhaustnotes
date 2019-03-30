@@ -27,6 +27,12 @@ h4 {
   padding:0 25px;
 }
 
+.faq a {
+  &:hover {
+    color: white !important;
+  }
+}
+
 .faq div {
   column-count: 3;
   column-gap: 20px;
