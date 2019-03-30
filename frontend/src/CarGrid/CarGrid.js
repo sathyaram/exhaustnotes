@@ -3,7 +3,7 @@ import Car from "../Car/Car";
 import axios from "axios";
 import Search from '../Search/Search'
 
-const api = process.env.REACT_APP_API
+const api = (process.env.REACT_APP_API === undefined) ? 'http://localhost:3500' : process.env.REACT_APP_API;
 
 class CarGrid extends Component {
   constructor(props) {
