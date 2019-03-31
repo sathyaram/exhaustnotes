@@ -93,12 +93,14 @@ class Faq extends Component {
             <br></br>
           </p>
           <p>
-            <h4>Love From</h4>
+            <h4>Help From</h4>
             <a rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
             <br></br>
             <a rel="noopener noreferrer" href="#" style={crimson}>Arun & Deva</a>
             <br></br>
             <a rel="noopener noreferrer" href="https://generalassemb.ly" style={crimson}>General Assembly</a>
+            <br></br>
+            <a rel="noopener noreferrer" href="https://instagram.com/flynnkr" style={crimson}>Kris Flynn</a>
             <br></br>
           </p>
         </div>

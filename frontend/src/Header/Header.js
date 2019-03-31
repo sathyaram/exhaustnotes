@@ -29,9 +29,9 @@ class Header extends Component {
             <li>
               <Link to="/submit"><i class="fas fa-microphone-alt"></i>  Submit</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/api"><i class="fas fa-code"></i>  API</Link>
-            </li>
+            </li> */}
             {/* <li>
               <a target="_blank" rel="noopener noreferrer" href="https://exhaustnotes.herokuapp.com/api/cars">API</a>
             </li> */}

@@ -62,11 +62,13 @@ No Copyright Infringement Intended
     - Link Photo Credit
 
 ### For v1.0
-- Put MongoDB on Lightsail Server
+[X] Put MongoDB on Lightsail Server
 - Google Analytics/Tag Manager
 - Create ExhaustNotes email account
-- Buy and attach domain
+[X] Buy and attach domain
+- https
 - Player Bug: when pause and scrub, starts clip over
+- 
 
 ### For v2.0
 - Infinite Scroll of Cars + Searching the grid
