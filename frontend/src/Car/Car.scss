@@ -36,26 +36,6 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
-// /* From Hover.css */
-// .car:before {
-//   content: "";
-//   position: absolute;
-//   z-index: -1;
-//   left: 0;
-//   right: 100%;
-//   top: -10px;
-//   background: $red;
-//   height: 10px;
-//   -webkit-transition-property: right;
-//   transition-property: right;
-//   -webkit-transition-duration: 0.3s;
-//   transition-duration: 0.3s;
-//   -webkit-transition-timing-function: ease-out;
-//   transition-timing-function: ease-out;
-// }
-// .car:hover:before, .car:focus:before, .car:active:before {
-//   right: 0;
-// }
 
 .car::before, .car::after {
   box-sizing: inherit;
@@ -133,7 +113,7 @@
 }
 
 .carModelLink:before {
-  content: 'Go to car page ➞';
+  content: 'Go to car website ➞';
   position: absolute;
   bottom: -15px;
   font-family: 'Rajdhani', sans-serif;
@@ -212,7 +192,6 @@
   border-left: 3px solid #f42737;
   opacity: 0;
   transition: all 700ms ease;
-
 }
 
 .car:hover .carMake {
@@ -277,27 +256,33 @@
   display:block;
   font-size:8px;
   padding: 1px 2px;
+
+  &:hover {
+    color:#2390da;
+  }
+
+  &::before {
+    // font-family: "Font Awesome 5 Free";
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    opacity: 0.4;
+  }
+
+  &:first-child::before {
+    content: "Sound from: ";
+  }
+
+  &:last-child::before {
+    content: "Photo By: ";
+  }
+
+  &:empty {
+    &::before {
+      content: none;
+    }
+  }
 }
 
-.carCredit a::before {
-  // font-family: "Font Awesome 5 Free";
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 900;
-  opacity: 0.4;
-}
-
-.carCredit a:first-child::before {
-  content: "Sound from: ";
-}
-
-.carCredit a:last-child::before {
-  content: "Photo By: ";
-}
-
-
-.carCredit a:hover {
-  color:#2390da;
-}
 
 @media screen and (min-width:1980px) {
   main {

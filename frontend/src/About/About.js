@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './Faq.scss'
+import './About.scss'
 
-class Faq extends Component {
+class About extends Component {
 
   
   render() {
@@ -52,7 +52,7 @@ class Faq extends Component {
       <div className="faq">
       <h3>What is ExhaustNotes?</h3>
       <p>
-        ExhaustNotes is a website where you can hear the distinct sounds a car makes when it revs its engine. The roar a car makes when its throttle is pushed is marvelous, glorious sound that should be appreciated for all its intricacies. On this site, you'll be able to browse many brands' top car models and hear their exhaust note, as every car is different. Listen closely, my friends. 
+        ExhaustNotes is a website where you can hear the distinct sounds a car makes when it revs its engine. The roar a car makes when its accelerator is pushed is marvelous, glorious sound that should be appreciated for all its intricacies. On this site, you'll be able to browse many brands' top car models and hear their exhaust note, as every car is different. Listen closely, my friends. 
         <br></br>
         <br></br>
       </p>
@@ -109,35 +109,9 @@ class Faq extends Component {
       <p>
         Because, I wanted to make a tool that people could use to hear the sick sounds cars make. I don't think there's any sort of central place to hear them all so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not.
       </p>
-      <h3>What can I do with the API?</h3>
-      <p>
-        Whatever you want.
-      </p>
-        {/* <details>
-            <summary>What is ExhaustNotes?</summary>
-            <p>This is a website to centralize a collection of car exhaust noises. 
-            </p>
-          </details>
-        <details>
-            <summary>What is this tool made with?</summary>
-            <p>React, Express, Mongooose, Axios, HTML/CSS, and mLab/Heroku.</p>
-          </details>
-          <details>
-            <summary>How can I interact with it?</summary>
-            <p>The API is open, meaning you can access it at any time and use the information 
-              about each car however you want. You're provided with the car's sound byte, and 
-              all the car's other information.
-            </p>
-            </details>
-            <details>
-            <summary>Can I submit my car's sound?</summary>
-            <p>Absolutely. Just click 'Submit a Sound' at the top and email me your cars information,
-              a quality picture and a strong sound file that captures your cars essential rumble.
-            </p>
-            </details> */}
       </div>
     );
   }
 }
 
-export default Faq;
+export default About;

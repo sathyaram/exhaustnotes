@@ -6,7 +6,7 @@ class CarForm extends Component {
   
   render() {
     let red = {
-      color: 'red'
+      color: '#f42737'
     }
     return (
       <div className="faq">
@@ -31,7 +31,7 @@ class CarForm extends Component {
           <br/>
         </ul>
         <p>Send all of the above information, nicely formatted, in an email to: 
-          <strong><a style={red} href="mailto:submit@exhaustnotes.co"> submit@exhaustnotes.co</a></strong>
+          <strong><a style={red} href="mailto:exhaustnotesco@gmail.com"> exhaustnotesco@gmail.com</a></strong>
         </p>
         <br/>
         <p>

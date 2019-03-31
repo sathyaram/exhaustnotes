@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import CarGrid from '../CarGrid/CarGrid'
 import CarForm from '../CarForm/CarForm'
 import Footer from '../Footer/Footer'
-import Faq from '../Faq/Faq'
+import About from '../About/About'
 import Menu from '../Menu/Menu'
 import './App.scss';
 import { Route, Switch } from 'react-router-dom';
@@ -19,7 +19,7 @@ class App extends Component {
         <main id="main-content">
           <Switch>
               <Route path="/submit" render={() => <CarForm />}/>
-              <Route path="/faq" render={() => <Faq />}/>
+              <Route path="/about" render={() => <About />}/>
               <Route path="/" render={() => <CarGrid />}/>
           </Switch>
         </main>

@@ -24,7 +24,7 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/faq"><i class="fas fa-flag-checkered"></i> About</Link>
+              <Link to="/about"><i class="fas fa-flag-checkered"></i> About</Link>
             </li>
             <li>
               <Link to="/submit"><i class="fas fa-microphone-alt"></i>  Submit</Link>
