@@ -108,16 +108,8 @@ section {
 
 body {
 	line-height: 1;
-	overflow-x:hidden;
-  /* Background Image Taken from TransparentTextures.com */
-  /* background: linear-gradient(rgba(14, 14, 14, 0.4), rgba(31, 31, 31, 0.4)),
-		url(/images/bgtexture.png);
-     */
-     background-color:#131313;
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  background-color:#131313;
+  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
