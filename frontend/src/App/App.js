@@ -4,7 +4,6 @@ import CarGrid from '../CarGrid/CarGrid'
 import CarForm from '../CarForm/CarForm'
 import Footer from '../Footer/Footer'
 import About from '../About/About'
-import Menu from '../Menu/Menu'
 import './App.scss';
 import { Route, Switch } from 'react-router-dom';
 
@@ -13,8 +12,7 @@ class App extends Component {
   
   render() {
     return (
-      <div className="pageWrapper">
-        {/* <Menu /> */}
+      <div className="page">
         <Header />
         <main id="main-content">
           <Switch>

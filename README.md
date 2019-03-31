@@ -63,12 +63,11 @@ No Copyright Infringement Intended
 
 ### For v1.0
 [X] Put MongoDB on Lightsail Server
-- Google Analytics/Tag Manager
-- Create ExhaustNotes email account
+[X] Google Analytics/Tag Manager
+[X] Create ExhaustNotes email account
 [X] Buy and attach domain
 - https
 - Player Bug: when pause and scrub, starts clip over
-- 
 
 ### For v2.0
 - Infinite Scroll of Cars + Searching the grid
@@ -80,4 +79,5 @@ No Copyright Infringement Intended
 - User Submitted CarGrid via contribution
 - User Form: Upload using axios/express: get the file in given route and save it somehow
 - Type Anywhere Search
-
+- Background of site changed to image of car with color overlay
+- More Car Information: Horsepower, Torque, Cylinder count, MSRP, Fuel Economy

@@ -18,7 +18,7 @@ h4 {
   padding-left: 7px;
 }
 
-.faq {
+.about {
   max-width:450px;
   margin: 70px auto 0;
   width:100%;
@@ -27,31 +27,31 @@ h4 {
   padding:0 25px;
 }
 
-.faq a {
+.about a {
   &:hover {
     color: white !important;
   }
 }
 
-.faq div {
+.about div {
   column-count: 3;
   column-gap: 20px;
   break-inside: avoid;
   margin-bottom: 20px;
 }
 
-.faq strong {
+.about strong {
   font-weight: 600;
 }
 
-.faq p {
+.about p {
   line-height: 120%;
   margin-bottom: 20px;
   font-size:20px;
   break-inside: avoid;
 }
 
-.faq summary {
+.about summary {
   padding:20px;
   font-size:18px;
   border-bottom:1px solid white;
@@ -60,19 +60,19 @@ h4 {
   border-radius:10px;
 }
 
-.faq summary:hover {
+.about summary:hover {
   cursor:pointer;
 }
 
-.faq details[open] summary {
+.about details[open] summary {
   margin-bottom:0;
   border:1px solid white;
 }
-.faq details[open] {
+.about details[open] {
   font-size:24px;
 }
 
-.faq details[open] p {
+.about details[open] p {
   padding:20px 20px 20px 41px;
   background:#171717;
   margin-bottom:15px;

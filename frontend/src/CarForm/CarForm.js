@@ -9,7 +9,7 @@ class CarForm extends Component {
       color: '#f42737'
     }
     return (
-      <div className="faq">
+      <div className="about">
       <p>
         Thanks for wanting to contribute to ExhaustNotes! 
         <br/>
