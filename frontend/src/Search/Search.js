@@ -19,6 +19,7 @@ class Search extends Component {
     return (
       <div className="carSearch">
         <div className="inputWrapper">
+          <label>Car Search</label>
           <input type="text" placeholder="Type a Car or Scroll Forever" onChange={this.props.updateQuery} value={this.props.searchQuery}/>
         </div>
       </div>

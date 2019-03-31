@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="page">
         <Header />
-        <main id="main-content">
+        <main id="main-content" role="main">
           <Switch>
               <Route path="/submit" render={() => <CarForm />}/>
               <Route path="/about" render={() => <About />}/>

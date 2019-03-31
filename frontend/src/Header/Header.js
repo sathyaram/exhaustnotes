@@ -15,13 +15,13 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header role="header">
         <div className="menuTrigger" onClick={this.openMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li>
               <Link to="/about"><i class="fas fa-flag-checkered"></i> About</Link>
@@ -29,16 +29,10 @@ class Header extends Component {
             <li>
               <Link to="/submit"><i class="fas fa-microphone-alt"></i>  Submit</Link>
             </li>
-            {/* <li>
-              <Link to="/api"><i class="fas fa-code"></i>  API</Link>
-            </li> */}
-            {/* <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://exhaustnotes.herokuapp.com/api/cars">API</a>
-            </li> */}
           </ul>
         </nav>
-        <h1 title="Exhaust Notes"><Link to="/">Exhaust<br/>Notes</Link></h1>
-        <h2>A Car Engine Sound Library</h2>
+        <h1 role="site-name" title="Exhaust Notes"><Link to="/">Exhaust<br/>Notes</Link></h1>
+        <h2 role="tagline">A Car Engine Sound Library</h2>
       </header>
     );
   }
