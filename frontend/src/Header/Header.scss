@@ -44,6 +44,8 @@ h1 a {
   position: relative;
   padding-top: 8px;
   line-height: 76%;
+  filter: drop-shadow(15px 0 35px rgba(0,0,0,0.8));
+
   
   &:hover {
     transform: skewX(-15deg);
