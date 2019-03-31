@@ -253,38 +253,37 @@
   opacity:0;
   transition: all 300ms ease;
   text-align: right;
-  padding: 11px 0 0;
-}
+  padding: 12px 0 2px 12px;
 
+  a {
+    color:white;
+    display:block;
+    font-size:8px;
+    padding: 1px 2px;
 
-.carCredit a {
-  color:white;
-  display:block;
-  font-size:8px;
-  padding: 1px 2px;
+    &:hover {
+      color:#2390da;
+    }
 
-  &:hover {
-    color:#2390da;
-  }
-
-  &::before {
-    // font-family: "Font Awesome 5 Free";
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 900;
-    opacity: 0.4;
-  }
-
-  &:first-child::before {
-    content: "Sound from: ";
-  }
-
-  &:last-child::before {
-    content: "Photo By: ";
-  }
-
-  &:empty {
     &::before {
-      content: none;
+      // font-family: "Font Awesome 5 Free";
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      opacity: 0.4;
+    }
+
+    &:first-child::before {
+      content: "Sound from: ";
+    }
+
+    &:last-child::before {
+      content: "Photo By: ";
+    }
+
+    &:empty {
+      &::before {
+        content: none;
+      }
     }
   }
 }
