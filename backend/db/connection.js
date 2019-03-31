@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 if (process.env.NODE_ENV === 'production') {
-  mongoose.connect(process.env.MLAB_URL);
-  console.log('Connecting to Mlab');
+  mongoose.connect(process.env.DB_URL);
+  console.log('Connecting to Production:' + process.env.DB_URL);
 } else {
-  mongoose.connect('mongodb://localhost/exhaustnotes'), { useNewUrlParser: true };
+  mongoose.connect('mongodb://localhost:28017/exhaustnotes'), { useNewUrlParser: true };
   console.log('Connecting to Localhost');
 }
 

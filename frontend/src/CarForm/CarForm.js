@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 
-import "./CarForm.css";
+import "./CarForm.scss";
 
 class CarForm extends Component {
+  
   render() {
+    let red = {
+      color: 'red'
+    }
     return (
-      <div className="carForm">
+      <div className="faq">
       <p>
         Thanks for wanting to contribute to ExhaustNotes! 
         <br/>
@@ -14,18 +18,20 @@ class CarForm extends Component {
         <br/>
         What we're going to need from you: 
         <ul>
-          <li>The Car Make</li>
+        <br/>
+
+          <strong><li>The Car Make</li>
           <li>The Car Model</li>
           <li>The Car Year</li>
           <li>The Car Trim/Package</li>
           <li>A High Resolution Image of The Car</li>
           <li>A Quality Exhaust Sound Byte from The Car</li>
           <li>The Car Credit</li>
-          <li>The Car Link</li>
+          <li>The Car Link</li></strong>
+          <br/>
         </ul>
-        
         <p>Send all of the above information, nicely formatted, in an email to: 
-          <a href="mailto:sathyatheram@gmail.com"> sathyatheram@gmail.com</a>
+          <strong><a style={red} href="mailto:submit@exhaustnotes.co"> submit@exhaustnotes.co</a></strong>
         </p>
         <br/>
         <p>

@@ -1,0 +1,30 @@
+footer {
+  background-attachment: fixed;
+  color:white;
+  padding:45px 15px 30px;
+  font-size:14px;
+  width:100%;
+  text-align:center;
+}
+
+footer span {
+  font-size: 8px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 9;
+  pointer-events: none;
+}
+
+footer a {
+  text-shadow: 0 0 5px #f42737, 0 0 10px #f42737, 0 0 15px #f42737, 0 0 20px #ee5c68, 0 10px 25px rgba(0, 0, 0, 1);
+  color: #f84857;
+  display: block;
+  font-size:18px;
+  letter-spacing: 2px;
+  transform: translateY(30px) skewY(-5deg);
+}
+
+footer a:hover {
+  color:white;
+}

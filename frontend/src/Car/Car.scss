@@ -5,6 +5,16 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  &:hover {
+    > .car {
+      opacity: 0.7;
+    }
+  }
+
+  > .car:hover {
+    opacity: 1;
+  }
 }
 
 .car {
@@ -54,7 +64,7 @@
   width: 100%;
   height: 100%;
   z-index:-1;
-  border: 8px solid transparent;
+  border: 3px solid transparent;
   width: 0;
   height: 0;
 }
@@ -83,7 +93,8 @@
   transition: border-color 0s ease-out 0.30s, width 0.20s ease-out 0.30s, height 0.10s ease-out 0.50s;
 }
 
-.car:hover {
+.car:hover,
+.car:active {
   box-shadow: 0 0 40px 0 rgba(0,0,0,0.8),
               0 0 60px 0 rgba(0,0,0,0.8),
               0 0 80px 0 rgba(0,0,0,0.8),
@@ -95,11 +106,7 @@
   cursor: pointer;
 }
 
-// .car:hover .carCredit {
-//   opacity:0.3;
-// }
-
-.car:hover .carCredit:hover {
+.car:hover .carCredit {
   opacity:1;
 }
 
@@ -243,7 +250,7 @@
 
 .carTrim {
   font-size:20px;
-  margin-top: 8px;
+  margin-top: 5px;
   color: #f42737;
   transition: all 500ms ease;
 
@@ -256,22 +263,51 @@
 .carCredit {
   position:absolute;
   right:0px;
-  bottom:-15px;
-  font-size:14px;
+  bottom:-30px;
   opacity:0;
   transition: all 300ms ease;
+  text-align: right;
+  padding: 11px 0 0;
 }
+
 
 .carCredit a {
   color:white;
-  display:inline-block;
-  padding:10px;
+  display:block;
+  font-size:8px;
+  padding: 1px 2px;
 }
+
+.carCredit a::before {
+  // font-family: "Font Awesome 5 Free";
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 900;
+  opacity: 0.4;
+}
+
+.carCredit a:first-child::before {
+  content: "Sound from: ";
+}
+
+.carCredit a:last-child::before {
+  content: "Photo By: ";
+}
+
 
 .carCredit a:hover {
   color:#2390da;
 }
 
+@media screen and (min-width:1980px) {
+  main {
+    max-width: 1480px !important;
+  }
+
+  .car {
+    flex: 0 0 24%;
+  }
+
+}
 
 @media screen and (max-width:1250px) {
   .car {
@@ -291,6 +327,10 @@
     &:hover {
       transform: scale(1);
     }
+  }
+
+  .carSound {
+    opacity: 1;
   }
 
   .carText {

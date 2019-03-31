@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Player from "../Player/Player";
 import Slider from "react-slick";
 import "./Car.scss";
-import InfiniteScroll from "react-infinite-scroller";
 
 class Car extends Component {
   generateSlideContent(imageArray, id) {
@@ -50,51 +49,44 @@ class Car extends Component {
         return false;
       }
     });
+
     return (
       <div className="carGrid">
-        <InfiniteScroll
-          pageStart={0}
-          loadMore={loadFunc}
-          hasMore={true || false}
-          loader={
-            <div className="loader" key={0}>
-              Loading ...
-            </div>
-          }
-        >
-          {filteredCars.map(car => (
-            <div
-              key={car._id}
-              className="car"
-              style={{ backgroundImage: `url(${car.carImage})` }}
-            >
-              {/* {this.generateSlideContent(car.carImages, car._id)} */}
-              {/* <audio controls src={car.carSound} type="audio/mp3">
+        {filteredCars.map(car => (
+          <div
+            key={car._id}
+            className="car"
+            style={{ backgroundImage: `url(${car.carImages[0].imagePath})` }}
+          >
+            {/* {this.generateSlideContent(car.carImages, car._id)} */}
+            {/* <audio controls src={car.carSound} type="audio/mp3">
                 Your browser does not support the <code>audio</code> element.
               </audio> */}
 
-              <Player streamUrl={car.carSound} preloadType="metadata" />
+            <Player streamUrl={car.carSound} preloadType="metadata" />
 
-              <div className="carText">
-                <div className="carYear">{car.carYear}</div>
-                <a
-                  className="carModelLink"
-                  href="https://www.audiusa.com/models/audi-tt-rs"
-                  target="_blank"
-                >
-                  <div className="carMake">{car.carMake}</div>
-                  <div className="carModel">{car.carModel}</div>
-                  <div className="carTrim">{car.carTrim}</div>
-                </a>
-              </div>
-              <div className="carCredit">
-                <a href={car.carLink} className="carLink">
-                  {car.carCredit}
-                </a>
-              </div>
+            <div className="carText">
+              <div className="carYear">{car.carYear}</div>
+              <a
+                className="carModelLink"
+                href="https://www.audiusa.com/models/audi-tt-rs"
+                target="_blank"
+              >
+                <div className="carMake">{car.carMake}</div>
+                <div className="carModel">{car.carModel}</div>
+                <div className="carTrim">{car.carTrim}</div>
+              </a>
             </div>
-          ))}
-        </InfiniteScroll>
+            <div className="carCredit">
+              <a href={car.carImages[0].creditLink}>
+                {car.carImages[0].creditText}
+              </a>
+              <a href={car.carLink} className="carLink" target="_blank">
+                {car.carCredit}
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     );
   }
