@@ -44,16 +44,21 @@ h1 a {
   position: relative;
   padding-top: 8px;
   line-height: 76%;
-  filter:drop-shadow(15px 0 35px rgba(0,0,0, 0.8));
+  
+  &:hover {
+    transform: skewX(-15deg);
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 55px rgba(248, 50, 50, 0.7));
+    text-shadow: 0 0 1px white;
+
+    &:after {
+      text-shadow: 0 0 0 white;
+      font-weight: bold;
+    }
+  }
 
 }
 
-h1 a:hover {
-  transform: skewX(-15deg);
-  letter-spacing: 2px;
-  filter: drop-shadow(0 0 55px rgba(248, 50, 50, 0.7));
-  text-shadow: 0 0 1px white;
-}
 
 h2 {
   font-family: 'Rajdhani', sans-serif;
