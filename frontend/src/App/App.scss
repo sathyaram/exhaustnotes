@@ -4,6 +4,12 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (min-width:1980px) {
+  main {
+    max-width: 1480px !important;
+  }
+}
+
 @media screen and (max-width:1250px) {
 
   main {
