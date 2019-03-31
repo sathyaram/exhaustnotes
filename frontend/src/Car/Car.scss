@@ -317,6 +317,14 @@
     }
   }
 
+  .carGrid {
+    &:hover {
+      > .car {
+        opacity: 1;
+      }
+    }
+  }
+
   .carSound {
     opacity: 1;
   }
