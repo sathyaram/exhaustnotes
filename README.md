@@ -74,6 +74,7 @@ No Copyright Infringement Intended
 - Slider for each car, so there can be multiple images
 - Adding a 'Love' option for Cars to tally which cars users find best
 - H1 Lights up as you type
+- Randomize grid order every refresh
 
 ### For v3.0
 - User Submitted CarGrid via contribution
