@@ -1,7 +1,7 @@
 footer {
   background-attachment: fixed;
   color:white;
-  padding:60px 15px;
+  padding:120px 15px 60px;
   font-size:14px;
   width:100%;
   text-align:center;
@@ -9,7 +9,7 @@ footer {
 
 footer span {
   font-size: 9px;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   text-transform: uppercase;
   position: relative;
   z-index: 9;
@@ -22,7 +22,7 @@ footer a {
   display: inline-block;
   font-size:18px;
   letter-spacing: 2px;
-  transform: translateY(16px) skewY(-5deg);
+  transform: translateY(17px) skewY(-5deg);
 }
 
 footer a:hover {

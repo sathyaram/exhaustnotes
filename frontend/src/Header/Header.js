@@ -15,7 +15,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header role="header">
+      <header role="banner">
         <div className="menuTrigger" onClick={this.openMenu}>
           <span></span>
           <span></span>
