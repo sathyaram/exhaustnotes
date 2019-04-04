@@ -9,6 +9,6 @@ ReactDOM.render(
   <Router>
     <App />
   </Router>,
-  document.body
+  document.getElementById("root")
 );
 serviceWorker.unregister();
