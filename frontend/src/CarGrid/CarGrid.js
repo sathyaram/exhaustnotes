@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import Car from "../Car/Car";
 import axios from "axios";
-<<<<<<< HEAD
 import Search from "../Search/Search";
-=======
-import Search from '../Search/Search';
-
->>>>>>> a42dc4a7cfd26864c757abb9baafd0672d6336e2
 
 const api =
   process.env.REACT_APP_API === undefined
@@ -49,11 +44,11 @@ class CarGrid extends Component {
     });
   };
 
-  clearSearchQuery = (e) => {
+  clearSearchQuery = e => {
     this.setState({
-      searchQuery: ''
-    })
-  }
+      searchQuery: ""
+    });
+  };
 
   componentDidMount() {
     this.getCars();
