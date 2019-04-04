@@ -8,6 +8,12 @@
   padding: 10px 15px;
   z-index: 99;
   transition: background-color 300ms ease, padding 300ms ease, max-width 300ms ease, width 300ms ease;
+  
+  &:hover {
+    #clear-search {
+      opacity: 0.2;
+    }
+  }
 }
 
 .fixed-nav .carSearch {
@@ -21,6 +27,11 @@
 .carWrapper {
   /* position: relative; */
   padding-top: 150px;
+
+  // .carSearch:hover,
+  // .carSearch:focus ~ .carGrid .cars {
+  //   margin-bottom: 120px !important;
+  // }
 }
 
 
@@ -41,7 +52,9 @@
   border-bottom:2px solid #5a080f;
 }
 
-.carSearch:hover input {
+.carSearch:hover input,
+.carSearch:focus input,
+.carSearch:hover input:focus {
   padding: 20px;
   border-radius: 0px;
   /* box-shadow:0px 6px 20px 1px rgba(0,0,0,0.6); */
@@ -94,6 +107,21 @@ input:focus {outline:0;}
   border-bottom-color: white;
   border-left-color: white;
   transition: border-color 0s ease-out 0.35s, width 0.25s ease-out 0.35s, height 0.15s ease-out 0.55s;
+}
+
+#clear-search {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 999;
+  cursor: pointer;
+  padding: 2px 5px;
 }
 
 

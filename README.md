@@ -62,11 +62,12 @@ No Copyright Infringement Intended
     - Link Photo Credit
 
 ### For v1.0
-[X] Put MongoDB on Lightsail Server
-[X] Google Analytics/Tag Manager
-[X] Create ExhaustNotes email account
-[X] Buy and attach domain
-- https
+- [X] Put MongoDB on Lightsail Server
+- [X] Google Analytics/Tag Manager
+- [X] Create ExhaustNotes email account
+- [X] Buy and attach domain
+- [X] Clear Search Text Button
+- [X] Https
 - Player Bug: when pause and scrub, starts clip over
 
 ### For v2.0

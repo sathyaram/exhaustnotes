@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 300px;
 
   &:hover {
     > .car {
@@ -14,6 +15,28 @@
 
   > .car:hover {
     opacity: 1;
+  }
+
+  
+
+
+
+  &:empty {
+    &::after {
+      content: "Darn, don't have that one. Check back later to see if we've added it!";
+      color: white;
+      font-weight: 500;
+      padding-top:50px;
+      text-shadow: 0 0 5px #f42737, 0 0 10px #f42737, 0 0 15px #f42737, 0 0 20px #ee5c68, 0 10px 25px black;
+      color: #ff737e;
+      width: 100%;
+      font-size: 30px;
+      max-width: 350px;
+      margin: 0 auto;
+      text-align: center;
+      z-index: -1;
+      transition: all 300ms ease;
+    }
   }
 }
 

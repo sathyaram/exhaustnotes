@@ -15,12 +15,29 @@ class Search extends Component {
   //   }
   //   window.addEventListener('scroll', stickyNavigation);
   // }
+
+  // clearInput() {
+    
+  //   ;
+  //   this.setState({
+  //     : null
+  //   });
+  // }
+
+  // clearInput = (e) => {
+  //   var search = document.getElementById('search');
+  //   this.setState({
+  //     search.value: null
+  //   });
+  // }
+
   render() {
     return (
       <div className="carSearch">
         <div className="inputWrapper">
           <label>Car Search</label>
-          <input type="text" placeholder="Type a Car or Scroll Forever" role="search" onChange={this.props.updateQuery} value={this.props.searchQuery}/>
+          <input id="search" type="text" placeholder="Type a Car or Scroll Forever" role="search" onChange={this.props.updateQuery} value={this.props.searchQuery}/>
+          <button id="clear-search" onClick={this.props.clearQuery}><i class="fas fa-ban"></i></button>
         </div>
       </div>
     );
