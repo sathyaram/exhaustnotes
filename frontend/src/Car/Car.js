@@ -68,7 +68,7 @@ class Car extends Component {
             
             <div className="carText">
                 <div className="carYear">{car.carYear}</div>
-                <a className="carModelLink" href="https://www.audiusa.com/models/audi-tt-rs" target="_blank">
+                <a className="carModelLink" href="https://www.audiusa.com/models/audi-tt-rs" target="_blank" rel="noopener noreferrer">
                   <div className="carMake">{car.carMake}</div>
                   <div className="carModel">{car.carModel}</div>
                   <div className="carTrim">{car.carTrim}</div>
@@ -76,7 +76,7 @@ class Car extends Component {
             </div>
             <div className="carCredit">
               <a href={car.carImages[0].creditLink}>{car.carImages[0].creditText}</a>
-              <a href={car.carLink} className="carLink" target="_blank">
+              <a href={car.carLink} className="carLink" target="_blank" rel="noopener noreferrer">
                 {car.carCredit}
               </a>
             </div>

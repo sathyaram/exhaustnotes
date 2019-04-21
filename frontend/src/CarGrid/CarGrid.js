@@ -18,7 +18,6 @@ class CarGrid extends Component {
 
   getCars = () => {
     axios.get(`${api}/api/cars`).then(res => {
-      console.log(res)
     this.setState({
       content: res.data
     });

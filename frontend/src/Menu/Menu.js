@@ -19,17 +19,17 @@ class Menu extends Component {
 
   render() {
     return (
-      <div class="menu">
+      <div className="menu">
          <div className="menuTrigger" onClick={this.openMenu}>
-          <i class="fas fa-flag-checkered"></i><span>About</span>
+          <i className="fas fa-flag-checkered"></i><span>About</span>
         </div>
-        <section >
+        <section>
           <article>
             <About />
           </article>
         </section>
         <div id="beamMeUp" onClick={this.toTop}>
-          <i class="fas fa-chevron-up"></i>
+          <i className="fas fa-chevron-up"></i>
         </div>
       </div>
     );

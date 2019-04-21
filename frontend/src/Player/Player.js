@@ -1,6 +1,6 @@
 import React from "react";
 import { withCustomAudio } from "react-soundplayer/addons";
-import { PlayButton, Timer, VolumeControl, Progress } from 'react-soundplayer/components';
+import { PlayButton, Timer, Progress } from 'react-soundplayer/components';
 import './Player.scss'
 
 const AWSSoundPlayer = withCustomAudio(props => {

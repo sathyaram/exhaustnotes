@@ -8,6 +8,12 @@
   padding: 10px 15px;
   z-index: 99;
   transition: background-color 300ms ease, padding 300ms ease, max-width 300ms ease, width 300ms ease;
+
+  label {
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+  }
   
   &:hover {
     #clear-search {
@@ -122,16 +128,10 @@ input:focus {outline:0;}
   opacity: 0;
   z-index: 999;
   cursor: pointer;
-  padding: 5px 12px;
+  padding: 5px 10px;
   height: 35px;
 }
 
-
-label {
-  visibility: hidden;
-  position: absolute;
-  pointer-events: none;
-}
 @media screen and (max-width: 980px) {
   .carSearch {
     top: 360px;

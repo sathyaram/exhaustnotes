@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="page">
-        <a href="#main-content" class="invisible">Skip to main content</a>    
+        <a href="#main-content" className="invisible">Skip to main content</a>    
         <Menu />
         <Header />
         <main role="main" id="main-content">
