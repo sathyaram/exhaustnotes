@@ -70,7 +70,7 @@ No Copyright Infringement Intended
 - Player Bug: when pause and scrub, starts clip over
 
 ### For v2.0
-- Shoot to top button
+- [X] Shoot to top button
 - [X] Infinite Scroll of Cars + Searching the grid
 - Slider for each car, so there can be multiple images
 - Adding a 'Love' option for Cars to tally which cars users find best

@@ -148,10 +148,6 @@ class About extends Component {
             <br></br>
             <a rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://instagram.com/flynnkr" style={crimson}>Kris Flynn</a>
-            <br></br>
-            <a rel="noopener noreferrer" href="https://generalassemb.ly" style={crimson}>General Assembly</a>
-            <br></br>
           </p>
         </div>
       ...And you!

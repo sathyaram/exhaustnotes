@@ -1,0 +1,264 @@
+.menuTrigger {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 15px 20px;
+  overflow: hidden;
+  z-index: 105;
+  cursor: pointer;
+  transition: all 300ms ease;
+  transform: skew(-5deg);
+  display: flex;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid #f42737;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+
+  &:after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 5px;
+    font-size: 22px;
+    position: absolute;
+    width: fit-content;
+    right: -15px;
+    top: 10%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 300ms ease;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.9), 2px 2px 50px rgba(0,0,0,0.4);
+    z-index: 99;
+  }
+
+  span {
+    width: 0px;
+    opacity: 0;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+
+  &:hover,
+  &.open {
+    padding: 15px 40px 15px 35px;
+    background: #f42737;
+    overflow: visible;
+
+    &:after {
+      opacity: 1;
+      right: -10px;
+      top: 50%;
+    }
+
+    i {
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.8) ;
+    }
+
+    span {
+      width: 75px;
+      opacity: 1;
+    }
+  }
+
+  &.open {
+    &:after {
+      font-size: 25px;
+      content: '\f00d';
+    }
+  }
+}
+
+#beamMeUp {
+  // border:1px solid #f42737;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 48px;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    content: '';
+    width: 90px;
+    height: 1px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #f42737;
+
+  }
+
+  i {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+.menu {
+  position: relative;
+}
+
+article {
+  overflow-y: scroll;
+  max-height: 100%;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+section {
+  max-width: 800px;
+  width: 100%;
+  padding: 50px 80px;
+  max-height: calc(100vh - 92px);
+  height: 100%;
+  position: absolute;
+  right: 61px;
+  top: 92px;
+  z-index: 103;
+  transition: all 200ms ease;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display:block;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    transform: skew(-5deg) translateY(-150%) translateX(3px);
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(20, 20, 20,0.95),rgba(3, 3, 3,0.95));
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #2b2b2b;
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 600ms ease;
+
+  }
+
+  .active & {
+    transform: translateY(0px);
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms ease;
+    position: fixed;
+    overflow: visible;
+
+    &:after {
+
+      transform: skew(-5deg) translateY(0) translate(0);
+    }
+  }
+}
+
+@media screen and (max-width:980px) {
+  .menuTrigger {
+    top: 0px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    padding: 7px 35px;
+    background: none;
+    overflow: visible;
+
+    i {
+      visibility: hidden;
+    }
+
+    &:after {
+      content: '\f0c9';
+      text-shadow: none;
+      padding-left: 0px;
+      left: 50%;
+      opacity: 1;
+      right: -10px;
+      top: 50%;
+      font-size: 30px;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &:hover,
+    &.open {
+      background: none;
+      border: none;
+      padding: 7px 35px;
+
+      &:before {
+        background: #f42737;
+      }
+    }
+
+    &.open {
+      
+
+      &:after {
+        font-size: 30px;
+        
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      text-shadow: 1px 1px 15px white;
+      z-index: -1;
+      width: 85px;
+      height: 85px;
+      margin-top: -22px;
+      transform: rotate(45deg);
+      background: rgba(0,0,0,0.6);
+      border: 1px solid #f42737;
+      transition: all 300ms ease;
+    }
+
+    span { 
+      display: none;
+    }
+  }
+
+  section {
+    right: auto;
+    left:0;
+    top:0;
+    width: 100%;
+    max-width: 100%;
+    overflow:hidden;
+    max-height: 100%;
+    padding: 40px 20px;
+    text-align: left;
+    background: linear-gradient(to bottom, rgba(20, 20, 20,0.95),rgba(3, 3, 3,0.95));
+
+    article {
+      overflow: auto;
+      max-height: 100%;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+}

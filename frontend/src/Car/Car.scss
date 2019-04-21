@@ -111,7 +111,7 @@
               0 0 120px 0 rgba(0,0,0,0.8);
   transform:scale(1.15) perspective(70px) rotateY(1deg);
   flex-grow:1;
-  z-index:3;
+  z-index:99;
   cursor: pointer;
 }
 
