@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import About from '../About/About';
-import CarForm from '../CarForm/CarForm';
 
 
 import './Header.scss'
@@ -24,8 +23,7 @@ class Header extends Component {
         </div>
         <section >
           <article>
-            <div><About /></div>
-            <div><CarForm /></div>
+            <About />
           </article>
         </section>
         <h1 role="site-name" title="Exhaust Notes"><Link to="/">Exhaust<br/>Notes</Link></h1>

@@ -6,6 +6,10 @@ class About extends Component {
 
   
   render() {
+    let red = {
+      color: '#f42737'
+    }
+    
     let react = {
       color: '#61dafb'
     };
@@ -55,10 +59,51 @@ class About extends Component {
       <div className="about">
       <h3>What is ExhaustNotes?</h3>
       <p>
-        ExhaustNotes is a website where you can hear the distinct sounds a car makes when it revs its engine. The roar a car makes when its accelerator is pushed is a marvelous, glorious sound that should be appreciated for all its intricacies. On this site, you'll be able to browse many brands' top car models and hear their exhaust note, as every car is different.
+        ExhaustNotes is a website where you can browse a collection of distinct sounds a car makes when it revs its engine. The roar of a car exhaust when the accelerator is pushed is a glorious experience and should be appreciated for all its intricacies. On this site, you'll be able to browse many car brands' top car models and hear their exhaust note, as every car is different.
         <br></br>
         <br></br>
       </p>
+      <hr/>
+      <h3>But like, why though?</h3>
+      <p>
+        Because, I wanted to make a tool that people could use to hear the sick sounds cars make. I don't think there's any sort of central place to hear them all so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not.
+      </p>
+      <br></br>
+      <hr/>
+      <h3>What can I do to help?</h3>
+      <p>
+        Glad you asked! ExhaustNotes is after all an open source project! Here's what we're going to need from you: 
+        <ul>
+        <br/>
+
+          <strong><li>The Car Make</li>
+          <li>The Car Model</li>
+          <li>The Car Year</li>
+          <li>The Car Trim/Package</li>
+          <li>A High Resolution Image of The Car</li>
+          <li>A Quality Exhaust Sound Byte from The Car</li>
+          <li>The Car Credit</li>
+          <li>The Car Link</li></strong>
+          <br/>
+        </ul>
+        <p>Send all of the above information, nicely formatted, in an email to: 
+          <strong><a style={red} href="mailto:exhaustnotesco@gmail.com"> exhaustnotesco@gmail.com</a></strong>
+        </p>
+        <br/>
+        <p>
+          If you have a suggestion, or want to help, I'm all ears! Throw a message
+          in the email you send me.
+        </p>
+      </p>
+      <br/>
+      <hr/>
+      <p>
+      <br/>
+           All submissions will be reviewed thoroughly to ensure photo quality is razorsharp, and sound quality is high fidelity.
+           <br/><br/>
+
+           <hr/>
+         </p>
       <h3>What's it made with?</h3>
         <div>
           <p>
@@ -110,10 +155,6 @@ class About extends Component {
           </p>
         </div>
       ...And you!
-      <h3>But like, why though?</h3>
-      <p>
-        Because, I wanted to make a tool that people could use to hear the sick sounds cars make. I don't think there's any sort of central place to hear them all so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not.
-      </p>
       </div>
     );
   }

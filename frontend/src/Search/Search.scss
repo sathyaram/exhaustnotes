@@ -132,17 +132,21 @@ label {
   position: absolute;
   pointer-events: none;
 }
+@media screen and (max-width: 980px) {
+  .carSearch {
+    top: 360px;
+  }
+}
+
 
 @media screen and (max-width:768px) {
   .carSearch {
-    top: 250px;
+    top: 300px;
   }
 }
 
 @media screen and (max-width:568px) {
   .carSearch {
-    top: 200px;
-    width: 100%;
   }
 
   .carSearch input {
@@ -152,9 +156,6 @@ label {
 
 @media screen and (max-width:490px) {
 
-  .carSearch {
-    top: 150px;
-  }
 
   .fixed-nav .inputWrapper {
     margin: 0;
