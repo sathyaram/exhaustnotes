@@ -53,7 +53,8 @@ class Car extends Component {
 
           <div
             key={car._id}
-            className="car"
+            className={`car ${car.carMake.toLowerCase()} ${car.carYear} `}
+            id={car.carModel.toLowerCase()}
             style={{ backgroundImage: `url(${car.carImages[0].imagePath})` }}
           >
           {/* {this.generateSlideContent(car.carImages, car._id)} */}

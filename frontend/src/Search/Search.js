@@ -37,7 +37,7 @@ class Search extends Component {
         <div className="inputWrapper">
           <label>Car Search</label>
           <input id="search" type="text" placeholder="Type a Car or Scroll Forever" role="search" onChange={this.props.updateQuery} value={this.props.searchQuery}/>
-          <button id="clear-search" onClick={this.props.clearQuery}><i class="fas fa-ban"></i></button>
+          <button id="clear-search" onClick={this.props.clearQuery}><i class="far fa-trash-alt"></i></button>
         </div>
       </div>
     );

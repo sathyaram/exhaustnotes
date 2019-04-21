@@ -112,7 +112,8 @@ input:focus {outline:0;}
 #clear-search {
   position: absolute;
   right: 10px;
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%);
   background: transparent;
   border: none;
   outline: none;
@@ -121,7 +122,8 @@ input:focus {outline:0;}
   opacity: 0;
   z-index: 999;
   cursor: pointer;
-  padding: 2px 5px;
+  padding: 5px 15px;
+  height: 35px;
 }
 
 

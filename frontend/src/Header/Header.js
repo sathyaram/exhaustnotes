@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import About from '../About/About';
+import CarForm from '../CarForm/CarForm';
+
 
 import './Header.scss'
 
@@ -17,20 +20,14 @@ class Header extends Component {
     return (
       <header role="banner">
         <div className="menuTrigger" onClick={this.openMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
+          <i class="fas fa-flag-checkered"></i><span>About</span>
         </div>
-        <nav role="navigation">
-          <ul>
-            <li>
-              <Link to="/about"><i class="fas fa-flag-checkered"></i> About</Link>
-            </li>
-            <li>
-              <Link to="/submit"><i class="fas fa-microphone-alt"></i>  Submit</Link>
-            </li>
-          </ul>
-        </nav>
+        <section >
+          <article>
+            <div><About /></div>
+            <div><CarForm /></div>
+          </article>
+        </section>
         <h1 role="site-name" title="Exhaust Notes"><Link to="/">Exhaust<br/>Notes</Link></h1>
         <h2 role="tagline">A Car Engine Sound Library</h2>
       </header>
