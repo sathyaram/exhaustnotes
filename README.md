@@ -22,17 +22,17 @@ Love the sound of cars? ExhaustNotes is a collection of car sounds where you can
 
 ### Schema 
 {
-  carYear: Number,
-  carMake: String,
-  carModel: String,
-  carTrim: String,
-  carLink: String,
-  carImage: String,
-  carImageCredit: String,
-  carImageCreditLink: String,
-  carSound: String,
-  carSoundCredit: String,
-  carSoundCreditLink: String
+-  carYear: Number,
+-  carMake: String,
+-  carModel: String,
+-  carTrim: String,
+-  carLink: String,
+-  carImage: String,
+-  carImageCredit: String,
+-  carImageCreditLink: String,
+-  carSound: String,
+-  carSoundCredit: String,
+-  carSoundCreditLink: String
 }
 
 ### Credits
