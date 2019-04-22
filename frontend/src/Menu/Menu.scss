@@ -82,17 +82,26 @@
 }
 
 #beamMeUp {
-  // border:1px solid #f42737;
   cursor: pointer;
   width: 40px;
   height: 40px;
   position: fixed;
   bottom: 30px;
   right: 48px;
-  z-index: 12;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 300ms ease;
+
+  &.show {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+  }
 
   &:after {
     content: '';

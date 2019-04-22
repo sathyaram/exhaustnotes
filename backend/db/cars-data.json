@@ -1,6 +1,5 @@
 [
 {
-    "_id" : "5be7523225dee234d6be5341",
     "carYear" : 2018,
     "carMake" : "Ford",
     "carModel" : "Mustang",
@@ -14,7 +13,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd0488e401e068be76571b",
     "carYear" : 2016,
     "carMake" : "Audi",
     "carModel" : "TT",
@@ -28,7 +26,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd052de401e068be76574b",
     "carYear" : 2016,
     "carMake" : "Porsche",
     "carModel" : "Panamara",
@@ -42,7 +39,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd0674e401e068be7657ac",
     "carYear" : 2017,
     "carMake" : "Toyota",
     "carModel" : "86",
@@ -56,7 +52,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd0751e401e068be7657eb",
     "carYear" : 2018,
     "carMake" : "BMW",
     "carModel" : "M4",
@@ -70,7 +65,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd07c5e401e068be765810",
     "carYear" : 2017,
     "carMake" : "Chevy",
     "carModel" : "Camaro",
@@ -84,7 +78,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd09bce401e068be7658a1",
     "carYear" : 2017,
     "carMake" : "Lamborghini",
     "carModel" : "Huracán",
@@ -98,7 +91,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd0a53e401e068be7658d5",
     "carYear" : 2016,
     "carMake" : "Volkswagon",
     "carModel" : "Golf",
@@ -112,7 +104,6 @@
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
 {
-    "_id" : "5cbd0ad2e401e068be7658f8",
     "carYear" : 2017,
     "carMake" : "Nissan",
     "carModel" : "GT-R",
@@ -125,9 +116,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0b48e401e068be76591d",
     "carYear" : 2018,
     "carMake" : "Lexus",
     "carModel" : "LC500",
@@ -140,9 +129,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0b92e401e068be765931",
     "carYear" : 2018,
     "carMake" : "Chevy",
     "carModel" : "Corvette",
@@ -155,9 +142,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0bd7e401e068be765945",
     "carYear" : 2018,
     "carMake" : "Dodge",
     "carModel" : "Challenger",
@@ -170,9 +155,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0cd7e401e068be76598d",
     "carYear" : 2018,
     "carMake" : "Mercedes-Benz",
     "carModel" : "E63 AMG",
@@ -185,9 +168,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0d1be401e068be7659a3",
     "carYear" : 2017,
     "carMake" : "Ford",
     "carModel" : "GT",
@@ -200,9 +181,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0d6be401e068be7659bb",
     "carYear" : 2018,
     "carMake" : "Kia",
     "carModel" : "Stinger",
@@ -215,9 +194,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0db2e401e068be7659d0",
     "carYear" : 2018,
     "carMake" : "McLaren",
     "carModel" : "720S",
@@ -230,9 +207,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0de6e401e068be7659e1",
     "carYear" : 2015,
     "carMake" : "Audi",
     "carModel" : "R8",
@@ -245,9 +220,7 @@
     "carSoundCredit" : "@carlifestyle",
     "carSoundCreditLink" : "https://instagram.com/carlifestyle"
 },
-
 {
-    "_id" : "5cbd0e23e401e068be7659f3",
     "carYear" : 2013,
     "carMake" : "Maserati",
     "carModel" : "GranTurismo",

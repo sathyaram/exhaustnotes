@@ -9,12 +9,25 @@ class Menu extends Component {
     let menu = document.querySelector(".menuTrigger");
     body.classList.toggle("active");
     menu.classList.toggle("open");
-  }
+  };
 
-  toTop = (e) => {
+  toTop = () => {
     window.scrollTo(0, 0);
-  }
+  };
 
+  revealYourself = () => {
+    var beamMeUp = document.getElementById("beamMeUp");
+    var y = window.scrollY;
+    if (y >= 800) {
+      beamMeUp.classList = 'show';
+    } else {
+      beamMeUp.classList = '';
+    }
+  };
+
+  componentDidMount = () => {
+    window.addEventListener("scroll", this.revealYourself);
+  };
   
 
   render() {
