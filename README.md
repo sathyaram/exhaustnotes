@@ -76,6 +76,7 @@ No Copyright Infringement Intended
 - Adding a 'Love' option for Cars to tally which cars users find best
 - H1 Lights up as you type
 - Randomize grid order every refresh
+- Put meta/openGraph information
 
 ### For v3.0
 - User Submitted CarGrid via contribution

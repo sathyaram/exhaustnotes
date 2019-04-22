@@ -55,7 +55,7 @@ class Car extends Component {
             key={car._id}
             className={`car ${car.carMake.toLowerCase()} ${car.carYear} `}
             id={car.carModel.toLowerCase()}
-            style={{ backgroundImage: `url(${car.carImages[0].imagePath})` }}
+            style={{ backgroundImage: `url(${car.carImage})` }}
           >
           {/* {this.generateSlideContent(car.carImages, car._id)} */}
               {/* <audio controls src={car.carSound} type="audio/mp3">
@@ -68,17 +68,15 @@ class Car extends Component {
             
             <div className="carText">
                 <div className="carYear">{car.carYear}</div>
-                <a className="carModelLink" href="https://www.audiusa.com/models/audi-tt-rs" target="_blank" rel="noopener noreferrer">
+                <a className="carModelLink" href={car.carLink} target="_blank" rel="noopener noreferrer">
                   <div className="carMake">{car.carMake}</div>
                   <div className="carModel">{car.carModel}</div>
                   <div className="carTrim">{car.carTrim}</div>
                 </a>
             </div>
             <div className="carCredit">
-              <a href={car.carImages[0].creditLink}>{car.carImages[0].creditText}</a>
-              <a href={car.carLink} className="carLink" target="_blank" rel="noopener noreferrer">
-                {car.carCredit}
-              </a>
+              <a href={car.carSoundCreditLink}>{car.carSoundCredit}</a>
+              <a href={car.carImageCreditLink} className="carLink" target="_blank" rel="noopener noreferrer">{car.carImageCredit}</a>
             </div>
           </div>
         ))

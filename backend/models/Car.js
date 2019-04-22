@@ -1,5 +1,4 @@
 const mongoose = require('../db/connection')
-const CarImage = require('./CarImage')
 const Schema = mongoose.Schema;
 
 const Car = new Schema({
@@ -7,8 +6,10 @@ const Car = new Schema({
   carMake: String,
   carModel: String,
   carTrim: String,
-  carImages: [CarImage.CarImageSchema],
   carLink: String,
+  carImage: String,
+  carImageCredit: String,
+  carImageCreditLink: String,
   carSound: String,
   carSoundCredit: String,
   carSoundCreditLink: String
