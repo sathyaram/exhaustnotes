@@ -1,33 +1,8 @@
 import React, { Component } from "react";
 import Player from '../Player/Player'
-import Slider from "react-slick";
 import "./Car.scss";
 
 class Car extends Component {
-
-  generateSlideContent(imageArray, id) {
-    var settings = {
-      dots: true,
-      arrows: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    const sliderContent = imageArray.map(image => {
-      return (
-      <div className="carSlide" >
-        <div class="carImage" style={{ backgroundImage: `url(${image.imagePath})` }}>
-          {/* <img src={image.imagePath} /> */}
-        </div>
-    </div>
-    )});
-    return (
-      <Slider {...settings} key={id}>
-        { sliderContent }
-      </Slider>
-    )
-  }
 
   render() {
       const filteredCars = this.props.contents.filter(car => {
@@ -56,16 +31,10 @@ class Car extends Component {
             className={`car ${car.carMake.toLowerCase()} ${car.carYear} `}
             id={car.carModel.toLowerCase()}
             style={{ backgroundImage: `url(${car.carImage})` }}
-          >
-          {/* {this.generateSlideContent(car.carImages, car._id)} */}
-              {/* <audio controls src={car.carSound} type="audio/mp3">
-                Your browser does not support the <code>audio</code> element.
-              </audio> */}
-              
+          >   
             <Player
               streamUrl={car.carSound}
-              preloadType="metadata" />
-            
+              preloadType="metadata" /> 
             <div className="carText">
                 <div className="carYear">{car.carYear}</div>
                 <a className="carModelLink" href={car.carLink} target="_blank" rel="noopener noreferrer">
