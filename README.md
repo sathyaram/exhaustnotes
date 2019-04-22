@@ -20,8 +20,7 @@ Love the sound of cars? ExhaustNotes is a collection of car sounds where you can
 - Node
 - Axios
 
-### Schema 
-{
+### Schema
 -  carYear: Number,
 -  carMake: String,
 -  carModel: String,
@@ -33,7 +32,6 @@ Love the sound of cars? ExhaustNotes is a collection of car sounds where you can
 -  carSound: String,
 -  carSoundCredit: String,
 -  carSoundCreditLink: String
-}
 
 ### Credits
 No Copyright Infringement Intended
