@@ -257,11 +257,6 @@
   margin-top: 5px;
   color: #f42737;
   transition: all 500ms ease;
-
-  // -webkit-text-fill-color: transparent;
-  // -webkit-background-clip: text;
-  // background-image: linear-gradient(to left top, #f42737, #f54131, #f5552c, #f56729, #f47627);
-  // background-image: linear-gradient(to left top, #f42737, #f53833, #f5452e, #f4512b, #f45c27);
 }
 
 .carCredit {
@@ -284,7 +279,6 @@
     }
 
     &::before {
-      // font-family: "Font Awesome 5 Free";
       font-family: 'Rajdhani', sans-serif;
       font-weight: 900;
       opacity: 0.4;
@@ -295,7 +289,7 @@
     }
 
     &:last-child::before {
-      content: "Photo By: ";
+      content: "Photo from: ";
     }
 
     &:empty {
