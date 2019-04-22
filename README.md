@@ -11,37 +11,29 @@ Love the sound of cars? ExhaustNotes is a collection of car sounds where you can
 - Access any of the sounds, names or images via the open API
 - Responsive/Mobile Friendly
 
-What I'd Like to Add:
-- Car Submit Form that sends to my email
-- Javascript animations for car hovering
-- Rotating images for each car
-- Photo Credit Field
-- HP/Torque for each car
-
-### Screenshots
-![exhaustnotes-ss1](https://github.com/sathyaram/exhaustnotes/blob/master/frontend/public/images/exhaustnotes-ss1.png) "ExhaustNotes Screenshot 1"
-![exhaustnotes-ss2](https://github.com/sathyaram/exhaustnotes/blob/master/frontend/public/images/exhaustnotes-ss2.png) "ExhaustNotes Screenshot 2"
-
 ### Technologies
-- HTML
-- CSS
+- HTML/SCSS
 - React
 - Javascript
 - Express
-- Mongoose
+- MongoDB/Mongoose
 - Node
 - Axios
 
-### Schemas
-- Car
-  - Car Year
-  - Car Make
-  - Car Model
-  - Car Trim
-  - Car Image
-  - Car Sound
-  - Car Credit
-  - Car Link
+### Schema 
+{
+  carYear: Number,
+  carMake: String,
+  carModel: String,
+  carTrim: String,
+  carLink: String,
+  carImage: String,
+  carImageCredit: String,
+  carImageCreditLink: String,
+  carSound: String,
+  carSoundCredit: String,
+  carSoundCreditLink: String
+}
 
 ### Credits
 No Copyright Infringement Intended
@@ -50,24 +42,12 @@ No Copyright Infringement Intended
 - Youtube, for card sounds
 - TransparentTextures, for background image
 
+---
 
-### Each Car Has:
-  - Car SVG
-  - Car Year Selector
-  - Car Make
-  - Car Model
-  - Car Trim
-  - Car Slider
-    - Image
-    - Link Photo Credit
-
-### For v1.0
-- [X] Put MongoDB on Lightsail Server
-- [X] Google Analytics/Tag Manager
-- [X] Create ExhaustNotes email account
-- [X] Buy and attach domain
-- [X] Https
-- Player Bug: when pause and scrub, starts clip over
+### Bugs
+- Player: when pause and scrub, starts clip over
+- Safari Car Hover Z-indexing
+- Menu section slide in transition glitchy
 
 ### For v2.0
 - [X] Shoot to top button
