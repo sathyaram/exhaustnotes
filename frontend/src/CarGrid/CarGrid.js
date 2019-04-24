@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Car from "../Car/Car";
 import axios from "axios";
 import Search from '../Search/Search';
+import { arrayShuffle } from "../Helpers/array.helper";
 
 
 const api = (process.env.REACT_APP_API === undefined) ? 'http://localhost:3500' : process.env.REACT_APP_API;
@@ -17,10 +18,10 @@ class CarGrid extends Component {
   }
 
   getCars = () => {
-    axios.get(`${api}/api/cars`).then(res => {
-    this.setState({
-      content: res.data
-    });
+    axios.get(`${api}/api/cars`).then(res => {      
+      this.setState({
+        content: arrayShuffle(res.data)
+      });
     }).catch(err => {
       console.log(err);
     });
