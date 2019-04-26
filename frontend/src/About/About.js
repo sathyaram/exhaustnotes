@@ -138,6 +138,13 @@ class About extends Component {
             <br></br>
           </p>
           <p>
+            <label>Help From</label>
+            <a rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Arun and Deva</a>
+            <br></br>
+            <a rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
+            <br></br>
+          </p>
+          <p>
             <label>Media</label>
             <a rel="noopener noreferrer" href="https://giphy.com" style={giphy}>Giphy</a>
             <br></br>
@@ -146,13 +153,6 @@ class About extends Component {
             <a rel="noopener noreferrer" href="https://github.com/kosmetism/react-soundplayer" style={reactsound}>React SoundPlayer</a>
             <br></br>
             <a rel="noopener noreferrer" href="https://transparenttextures.com" style={express}>Transparent Textures</a>
-            <br></br>
-          </p>
-          <p>
-            <label>Help From</label>
-            <a rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Arun and Deva</a>
-            <br></br>
-            <a rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
             <br></br>
           </p>
         </div>

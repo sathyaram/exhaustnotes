@@ -25,18 +25,36 @@ class Menu extends Component {
     }
   };
 
+  clickClose = () => {
+    var section = document.getElementById('info');
+    let body = document.querySelector('body');
+    let menu = document.querySelector(".menuTrigger");
+    //I'm using "click" but it works with any event
+      document.addEventListener('click', function(e) {
+      if (!body.classList.contains('active')) {
+
+        var isClickInside = section.contains(e.target);
+        if (!isClickInside) {
+        //the click was outside the specifiedElement, do something
+          body.classList.toggle("active");
+          menu.classList.toggle("open");
+        }
+      }
+    });
+  }
+
   componentDidMount = () => {
     window.addEventListener("scroll", this.revealYourself);
+    // this.clickClose();
   };
   
-
   render() {
     return (
       <div className="menu">
          <div className="menuTrigger" onClick={this.openMenu}>
           <i className="fas fa-flag-checkered"></i><span>About</span>
         </div>
-        <section>
+        <section id="info">
           <article>
             <About />
           </article>
