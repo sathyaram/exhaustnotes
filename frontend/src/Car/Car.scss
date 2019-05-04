@@ -46,12 +46,12 @@
   color:white;
   font-family: 'Alfa Slab One', cursive;
   transition: all 500ms ease;
-  // box-shadow:30px 30px 80px 0 rgba(0,0,0,0.7);
+  box-shadow:30px 30px 80px 0 rgba(0,0,0,0.7);
   display: inline-block;
   vertical-align: middle;
   transform-origin: 0 50%;
-  -webkit-transform: perspective(0) rotateY(0);
   transform: perspective(0) rotateY(0);
+  backface-visibility: hidden;
 
   &:nth-last-child(3),
   &:nth-last-child(2),
