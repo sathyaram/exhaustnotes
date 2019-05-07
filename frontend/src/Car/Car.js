@@ -5,6 +5,16 @@ import { InfiniteScroll } from "react-simple-infinite-scroll";
 
 class Car extends Component {
 
+  state = {
+    carLoveCount: 46
+  }
+
+  carLoveClicked = (e) => {
+    e.preventDefault();
+    var carBut = document.querySelector('.carButton');
+    carBut.classList.toggle('clicked');
+  }
+
   render() {
     let filteredCars
     if (this.props.searchQuery) {
@@ -27,7 +37,7 @@ class Car extends Component {
       filteredCars = this.props.currentPage
     }
 
-
+    
     return (
       <InfiniteScroll
         throttle={50}
@@ -56,6 +66,14 @@ class Car extends Component {
                     <div className="carModel">{car.carModel}</div>
                     <div className="carTrim">{car.carTrim}</div>
                   </a>
+                </div>
+                <div className="carLove">
+                  <div className="carRating">Rate</div>
+                  <div className="trafficLight">
+                    <button onClick={this.carLoveClicked} className="carButton redLight"><div class="carLoveCount">{this.state.carLoveCount}</div></button>
+                    <button onClick={this.carLoveClicked} className="carButton yellowLight"></button>
+                    <button onClick={this.carLoveClicked} className="carButton greenLight"></button>
+                  </div>
                 </div>
                 <div className="carCredit">
                   <a href={car.carSoundCreditLink}>{car.carSoundCredit}</a>

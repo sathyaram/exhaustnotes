@@ -72,16 +72,16 @@ class About extends Component {
       <hr/>
       <h3>What can I do with it?</h3>
       <p>
-        An optimized API is actually coming soon; you'll be able to nicely interface and deliver the sounds and images from this website. You can technically reference <a style={red} href="/api/cars">/api/cars</a> as it is currently live, but it is <strong>not</strong> fully developed.
+        An full-fledged API is coming soon; you'll be able to nicely interface with and deliver the sounds and images from this website. You can technically reference <a style={red} href="/api/cars">/api/cars</a> as it is currently live, but it is <strong>not</strong> fully developed.
         <br></br>
         <br></br>
-        And if you're not a nerd, just sit back and listen to the revs, yo.
+        Other than that, you can just sit back and listen to the revs, yo.
       </p>
       <br></br>
       <hr/>
       <h3>Can I do anything to help?</h3>
       <p>
-        Glad you asked! I'm making ExhaustNotes an open source project so I would absolutely love users to contribute high quality sounds. Here's what I'm going to need from you, well-formatted, in an email:
+        Glad you asked! ExhaustNotes is an open source project so I would absolutely love users to contribute high quality sounds. Here's what I'm going to need from you, well-formatted, in an email:
         </p> 
         <ul>
 
@@ -100,8 +100,7 @@ class About extends Component {
         </p>
         <br/>
         <p>
-          If you have a suggestion, or want to help, I'm all ears! Throw a message
-          in the email you send me.
+          If you have a suggestion, or want to help, I'm all ears! Throw a message in the email you send me.
        <br></br>
       <br></br>
       All submissions will be reviewed thoroughly to ensure photo quality is razorsharp, and sound quality is high fidelity.
@@ -113,46 +112,48 @@ class About extends Component {
         <div>
           <p>
             <label>Tech</label>
-            <a rel="noopener noreferrer" href="https://reactjs.org/" style={react}>React.js</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/" style={react}>React.js</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://expressjs.org/" style={express}>Express.js</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://expressjs.org/" style={express}>Express.js</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://www.mongodb.com/" style={mongo}>MongoDB</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.mongodb.com/" style={mongo}>MongoDB</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://aws.amazon.com/lightsail/" style={lightsail}>Lightsail</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com/lightsail/" style={lightsail}>Lightsail</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://axois.com" style={axios}>Axios</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://axois.com" style={axios}>Axios</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://fontawesome.com" style={fontawesome}>FontAwesome</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://fontawesome.com" style={fontawesome}>FontAwesome</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://flexbox.org/" style={flexbox}>Flexbox</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://flexbox.org/" style={flexbox}>Flexbox</a>
             <br></br>
           </p>
           <p>
             <label>Fonts</label>
-            <a rel="noopener noreferrer" href="https://fonts.google.com/specimen/Rajdhani" style={tomato}>Rajdhani</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/specimen/Rajdhani" style={tomato}>Rajdhani</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://fonts.google.com/specimen/Bungee" style={tomato}>Bungee</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/specimen/Bungee" style={tomato}>Bungee</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://fonts.google.com/specimen/Alfa+Slab+One" style={tomato}>Alfa Slab One</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/specimen/Alfa+Slab+One" style={tomato}>Alfa Slab One</a>
             <br></br>
           </p>
           <p>
             <label>Help From</label>
-            <a rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Arun and Deva</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Arun and Deva</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
+            <br></br>
+            <a target="_blank" rel="noopener noreferrer" href="https://andretimar.com" style={crimson}>Andre</a>
             <br></br>
           </p>
           <p>
             <label>Media</label>
-            <a rel="noopener noreferrer" href="https://giphy.com" style={giphy}>Giphy</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://giphy.com" style={giphy}>Giphy</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://youtube.com" style={youtube}>Youtube</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com" style={youtube}>Youtube</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://github.com/kosmetism/react-soundplayer" style={reactsound}>React SoundPlayer</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kosmetism/react-soundplayer" style={reactsound}>React SoundPlayer</a>
             <br></br>
-            <a rel="noopener noreferrer" href="https://transparenttextures.com" style={express}>Transparent Textures</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://transparenttextures.com" style={express}>Transparent Textures</a>
             <br></br>
           </p>
         </div>

@@ -58,55 +58,62 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &::before, &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    border: 3px solid transparent;
+    width: 0;
+    height: 0;
+    }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover,
+  &.active {
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.8),
+    0 0 60px 0 rgba(0,0,0,0.8),
+    0 0 80px 0 rgba(0,0,0,0.8),
+    0 0 100px 0 rgba(0,0,0,0.8),
+    0 0 120px 0 rgba(0,0,0,0.8);
+    transform:scale(1.15) perspective(70px) rotateY(1deg);
+    flex-grow:1;
+    z-index:99;
+    cursor: pointer;
+    &::before,
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      border-top-color: #f42737;
+      border-right-color: #f42737;
+      transition: width 0.10s ease-out, height 0.10s ease-out 0.10s;
+    }
+
+    &::after {
+      border-bottom-color: #f42737;
+      border-left-color: #f42737;
+      transition: border-color 0s ease-out 0.30s, width 0.20s ease-out 0.30s, height 0.10s ease-out 0.50s;
+    }
+  }
 }
 
-.car::before, .car::after {
-  box-sizing: inherit;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index:-1;
-  border: 3px solid transparent;
-  width: 0;
-  height: 0;
-}
 
-.car::before {
-  top: 0;
-  left: 0;
-}
-.car::after {
-  bottom: 0;
-  right: 0;
-}
-
-.car:hover::before, .car:hover::after {
-  width: 100%;
-  height: 100%;
-}
-.car:hover::before {
-  border-top-color: #f42737;
-  border-right-color: #f42737;
-  transition: width 0.10s ease-out, height 0.10s ease-out 0.10s;
-}
-.car:hover::after {
-  border-bottom-color: #f42737;
-  border-left-color: #f42737;
-  transition: border-color 0s ease-out 0.30s, width 0.20s ease-out 0.30s, height 0.10s ease-out 0.50s;
-}
-
-.car:hover,
-.car:active {
-  box-shadow: 0 0 40px 0 rgba(0,0,0,0.8),
-              0 0 60px 0 rgba(0,0,0,0.8),
-              0 0 80px 0 rgba(0,0,0,0.8),
-              0 0 100px 0 rgba(0,0,0,0.8),
-              0 0 120px 0 rgba(0,0,0,0.8);
-  transform:scale(1.15) perspective(70px) rotateY(1deg);
-  flex-grow:1;
-  z-index:99;
-  cursor: pointer;
+.car:hover .carLove {
+  opacity: 1;
 }
 
 .car:hover .carCredit {
@@ -233,6 +240,7 @@
     border-top: 1px solid #fff;
     transition: margin 300ms ease;
 }
+
 .carModel {
   
 }
@@ -300,6 +308,138 @@
   }
 }
 
+.carLove {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(0.5);
+  transition: opacity 600ms ease, transform 600ms ease;
+  right: -30px;
+  opacity: 0;
+
+  .carRating {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: -12px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  &:hover {
+    transform: translateY(-50%) scale(0.8);
+  }
+
+  .trafficLight {
+    display: flex;
+    flex-direction: column;
+    height: 135px;
+    justify-content: space-between;
+    padding: 12px 10px 10px;
+    background: #222;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.7);
+    background-image: linear-gradient(transparent 2%, #111 2%, transparent 3%, #111 30%);
+    border: solid 5px #3d3d3d;
+    border-radius: 12px;
+    width: 60px;
+
+    .carButton {
+      position: relative;
+
+      .carLoveCount {
+        color: white;
+        position: absolute;
+        top: 50%;
+        font-family: 'Bungee', sans-serif;
+        letter-spacing: 0;
+        left: 50%;
+        font-size: 16px;
+        font-weight: bold;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      &:hover,
+      &.clicked {
+        cursor: pointer;
+
+        &::after {
+          padding-left: 0;
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        content: '';
+        color: white;
+        position: absolute;
+        top: 5px;
+        left: 35px;
+        text-align: left;
+        width: max-content;
+        font-size: 14px;
+        font-family: 'Bungee', sans-serif;
+        transition: all 300ms ease;
+        padding-left: 10px;
+        opacity: 0;
+      }
+      
+      &.redLight {
+        background: red;
+        background-image: radial-gradient(brown, transparent);
+        background-size: 5px 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: dotted 2px red;
+        box-shadow: 0 0 20px #111 inset, 0 0 10px red;
+
+        &::after {
+          content: "Don't Like It";
+        }
+        
+        &.clicked {
+          box-shadow: 0 0 20px #bd2525 inset, 0 0 10px red;
+        }
+      }
+
+      &.yellowLight {
+        background: yellow;
+        background-image: radial-gradient(orange, transparent);
+        background-size: 5px 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: dotted 2px yellow;
+        box-shadow: 0 0 20px #111 inset, 0 0 10px yellow;
+
+        &::after {
+          content: "Think It's Okay";
+        }
+
+        &.clicked {
+          box-shadow: 0 0 20px #bfb219 inset, 0 0 10px yellow;
+        }
+      }
+
+      &.greenLight {
+        background: green;
+        background-image: radial-gradient(lime, transparent);
+        background-size: 5px 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: dotted 2px lime;
+        box-shadow: 0 0 20px #111 inset, 0 0 10px lime;
+
+        &::after {
+          content: "Really Love It!";
+        }
+
+        &.clicked {
+          box-shadow: 0 0 20px #1ac32f inset, 0 0 10px lime;
+        }
+      }
+    }
+  }
+}
+
 .invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -320,6 +460,11 @@
 
   .car:hover {
     transform:scale(1.1);
+  }
+
+  .carLove {
+    right: auto;
+    left: -30px;
   }
 }
 @media screen and (max-width:680px) {
@@ -354,5 +499,9 @@
     &:hover {
       left: 0;
     }
+  }
+
+  .carLove {
+    left: 0;
   }
 }
