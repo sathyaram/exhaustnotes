@@ -12,7 +12,7 @@ h1 {
 }
 
 h1 a:after {
-  content: 'v1.42';
+  content: 'v1.72';
   position: absolute;
   bottom: 0;
   right: 0;
@@ -98,5 +98,15 @@ h2 {
 
   h2 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width:405px) {
+  h1 a {
+    font-size:56px;
+
+    &:hover {
+      letter-spacing: -5px;
+    }
   }
 }

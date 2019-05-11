@@ -16,21 +16,6 @@ class Search extends Component {
   //   window.addEventListener('scroll', stickyNavigation);
   // }
 
-  // clearInput() {
-    
-  //   ;
-  //   this.setState({
-  //     : null
-  //   });
-  // }
-
-  // clearInput = (e) => {
-  //   var search = document.getElementById('search');
-  //   this.setState({
-  //     search.value: null
-  //   });
-  // }
-
   render() {
     return (
       <div className="carSearch">

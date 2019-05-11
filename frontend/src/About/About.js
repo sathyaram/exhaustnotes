@@ -66,13 +66,25 @@ class About extends Component {
       <hr/>
       <h3>But like, why though?</h3>
       <p>
-        Because, I wanted to make a tool that people could use to hear the sick sounds cars make. I don't think there's any sort of central place to hear them all so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not.
+        Because... I wanted to make a website that people could use to hear the awesome sounds cars make. I don't think there's any sort of central place to hear on the internet, so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not!
+      </p>
+      <br></br>
+      <hr/>
+      <h3>Can I see where the images/sounds are from?</h3>
+      <p>
+        Absolutely! When you're hovering over a car, in the bottom right area you'll see two links pop up that credit the image source and the sound source. Click a link to be taken to a new page where that sound/image was sourced.
+      </p>
+      <br></br>
+      <hr/>
+      <h3>Why .co and not .com?</h3>
+      <p>
+        Because someone is freaking squatting on exhaustnotes.com and not using it, SO THAT MEANS THE WORLD CAN'T USE IT AND I'M SALTY AS HELL.
       </p>
       <br></br>
       <hr/>
       <h3>What can I do with it?</h3>
       <p>
-        An full-fledged API is coming soon; you'll be able to nicely interface with and deliver the sounds and images from this website. You can technically reference <a style={red} href="/api/cars">/api/cars</a> as it is currently live, but it is <strong>not</strong> fully developed.
+        A full-fledged API is coming soon; you'll be able to nicely interface with and deliver the sounds and images from this website. You can technically reference <a style={red} href="/api/cars">/api/cars</a> as it is currently live, but it is <strong>not</strong> fully developed.
         <br></br>
         <br></br>
         Other than that, you can just sit back and listen to the revs, yo.
@@ -84,7 +96,6 @@ class About extends Component {
         Glad you asked! ExhaustNotes is an open source project so I would absolutely love users to contribute high quality sounds. Here's what I'm going to need from you, well-formatted, in an email:
         </p> 
         <ul>
-
           <strong><li>The Car Make</li>
           <li>The Car Model</li>
           <li>The Car Year</li>
@@ -138,11 +149,13 @@ class About extends Component {
           </p>
           <p>
             <label>Help From</label>
-            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Arun and Deva</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Arun Ram</a>
+            <br></br>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/void2star" style={crimson}>Deva Sagar</a>
             <br></br>
             <a target="_blank" rel="noopener noreferrer" href="https://ortizlu.com" style={crimson}>Luis Ortiz</a>
             <br></br>
-            <a target="_blank" rel="noopener noreferrer" href="https://andretimar.com" style={crimson}>Andre</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://andretimar.com" style={crimson}>Andre Timar</a>
             <br></br>
           </p>
           <p>
@@ -157,7 +170,7 @@ class About extends Component {
             <br></br>
           </p>
         </div>
-      ...And you!
+      ...And from viewers like you. Thank you!
       </div>
     );
   }

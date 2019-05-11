@@ -70,7 +70,7 @@ class Car extends Component {
                 <div className="carLove">
                   <div className="carRating">Rate</div>
                   <div className="trafficLight">
-                    <button onClick={this.carLoveClicked} className="carButton redLight"><div class="carLoveCount">{this.state.carLoveCount}</div></button>
+                    <button onClick={this.carLoveClicked} className="carButton redLight"><div className="carLoveCount">{this.state.carLoveCount}</div></button>
                     <button onClick={this.carLoveClicked} className="carButton yellowLight"></button>
                     <button onClick={this.carLoveClicked} className="carButton greenLight"></button>
                   </div>

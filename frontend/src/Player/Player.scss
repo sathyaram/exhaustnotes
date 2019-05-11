@@ -41,7 +41,10 @@
   background: none;
   border: none;
   cursor: pointer;
-  
+}
+
+.sb-soundplayer-btn:focus {
+  outline: 0;
 }
 
 .sb-soundplayer-btn svg {

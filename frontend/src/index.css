@@ -179,7 +179,8 @@ a {
 
 ::-webkit-scrollbar
 {
-	background-color: #f42737;
+  background-color: #f42737;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track

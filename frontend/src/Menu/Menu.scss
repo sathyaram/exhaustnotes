@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-
+  width: fit-content;
 
   &:after {
     content: '\f078';
@@ -56,6 +56,7 @@
     padding: 15px 35px;
     background: #f42737;
     overflow: visible;
+    width: auto;
 
     &:after {
       opacity: 1;
@@ -142,7 +143,7 @@ section {
   top: 92px;
   z-index: 103;
   transition: all 300ms ease;
-  transform: translateX(100%);
+  transform: translateY(100%);
   opacity: 0;
   pointer-events: none;
   display:block;
@@ -164,7 +165,7 @@ section {
   }
 
   .active & {
-    transform: translateX(0);
+    transform: translateY(0);
     pointer-events: auto;
     opacity: 1;
     overflow: visible;
