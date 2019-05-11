@@ -36,8 +36,8 @@ Love the sound of cars? ExhaustNotes is a collection of car sounds where you can
 ### Credits
 No Copyright Infringement Intended
 - GIPHY, for the header gif
-- Unsplash, for the card images
-- Youtube, for card sounds
+- Unsplash, for the car images
+- Youtube, for car sounds
 - TransparentTextures, for background image
 
 ---
@@ -45,16 +45,15 @@ No Copyright Infringement Intended
 ### Bugs
 - Player: when pause and scrub, starts clip over
 - Safari Car Hover Z-indexing
-- Menu section slide in transition glitchy
 
 ### For v2.0
 - [X] Shoot to top button
 - [X] Infinite Scroll of Cars + Searching the grid
+- [X] Put meta/openGraph information
+- [X] Randomize grid order every refresh
 - Slider for each car, so there can be multiple images
 - Adding a 'Love' option for Cars to tally which cars users find best
 - H1 Lights up as you type
-- Randomize grid order every refresh
-- Put meta/openGraph information
 
 ### For v3.0
 - User Submitted CarGrid via contribution
