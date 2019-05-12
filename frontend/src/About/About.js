@@ -66,7 +66,7 @@ class About extends Component {
       <hr/>
       <h3>But like, why though?</h3>
       <p>
-        Because... I wanted to make a website that people could use to hear the awesome sounds cars make. I don't think there's any sort of central place to hear on the internet, so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not!
+        Because... I wanted to make a website that people could use to hear the awesome sounds cars make. I don't think there's any sort of central place on the internet where you can just hear car noises, so I thought I'd fill that void. Oh, I also <strong>freaking love cars</strong>, so why the heck not! I get a kick out of listening to these revs and I hope you do too. 
       </p>
       <br></br>
       <hr/>
@@ -78,7 +78,7 @@ class About extends Component {
       <hr/>
       <h3>Why .co and not .com?</h3>
       <p>
-        Because someone is freaking squatting on exhaustnotes.com and not using it, SO THAT MEANS THE WORLD CAN'T USE IT AND I'M SALTY AS HELL.
+        Because someone is freaking squatting on exhaustnotes.com but not using it, SO THAT MEANS THE WORLD CAN'T USE IT AND I'M SALTY AS HELL.
       </p>
       <br></br>
       <hr/>
@@ -111,7 +111,7 @@ class About extends Component {
         </p>
         <br/>
         <p>
-          If you have a suggestion, or want to help, I'm all ears! Throw a message in the email you send me.
+          If you have any suggestions or improvements, I'm all ears! Throw a message in the email you send me.
        <br></br>
       <br></br>
       All submissions will be reviewed thoroughly to ensure photo quality is razorsharp, and sound quality is high fidelity.

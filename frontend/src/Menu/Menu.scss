@@ -15,6 +15,7 @@
   justify-content: center;
   color: white;
   width: fit-content;
+  backface-visibility: hidden;
 
   &:after {
     content: '\f078';
