@@ -9,6 +9,16 @@ import * as Config from '../config';
 
 
 class App extends Component {
+
+  constructor() {
+    super();
+    
+    // Create a placholder to replace the variable guards
+    const ratingsPlaceholder = localStorage.getItem('carRatings');
+    if (!ratingsPlaceholder) {
+      localStorage.setItem('carRatings', JSON.stringify([]));
+    }
+  }
   
   render() {
     return (

@@ -66,7 +66,7 @@ class CarGrid extends Component {
     return (
       <div className="carWrapper">
         <Search searchQuery={this.state.searchQuery} clearQuery={this.clearSearchQuery} updateQuery={this.updateSearchQuery} />
-        <Car searchQuery={this.state.searchQuery} currentPage={this.state.currentPage} contents={this.state.content} loadMore={this.loadMore} isLoading={this.state.isLoading} page={this.state.page} />
+        <Car searchQuery={this.state.searchQuery} currentPage={this.state.currentPage} contents={this.state.content} loadMore={this.loadMore} isLoading={this.state.isLoading} page={this.state.page} update={ () => this.getCars() } />
       </div>
     );
   }
