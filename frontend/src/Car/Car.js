@@ -57,7 +57,7 @@ class Car extends Component {
                 style={{ backgroundImage: `url(${car.carImage})` }}
               >
                 <Player
-                  streamUrl={car.carSound}
+                  streamUrl={`${process.env.REACT_APP_API}/${car.carSound}`}
                   preloadType="metadata" />
                 <div className="carText">
                   <div className="carYear">{car.carYear}</div>
