@@ -1,19 +1,9 @@
 import React, { Component } from "react";
+import { InfiniteScroll } from "react-simple-infinite-scroll";
 import Player from '../Player/Player'
 import "./Car.scss";
-import { InfiniteScroll } from "react-simple-infinite-scroll";
 
 class Car extends Component {
-
-  state = {
-    carLoveCount: 46
-  }
-
-  carLoveClicked = (e) => {
-    e.preventDefault();
-    var carBut = document.querySelector('.carButton');
-    carBut.classList.toggle('clicked');
-  }
 
   render() {
     let filteredCars
@@ -23,7 +13,6 @@ class Car extends Component {
         const make = car.carMake.toLowerCase();
         const model = car.carModel.toLowerCase();
         const trim = car.carTrim.toLowerCase();
-
 
         if (make.indexOf(query) > -1 ||
           model.indexOf(query) > -1 ||
@@ -51,10 +40,11 @@ class Car extends Component {
             filteredCars.map(car => (
 
               <div
-                key={car._id}
-                className={`car ${car.carMake.toLowerCase()} ${car.carYear} `}
+                key={car.carModel}
+                className="car"
                 id={car.carModel.toLowerCase()}
                 style={{ backgroundImage: `url(${car.carImage})` }}
+                aria-label={`${car.carMake} ${car.carModel}`}
               >
                 <Player
                   streamUrl={car.carSound}
@@ -66,14 +56,6 @@ class Car extends Component {
                     <div className="carModel">{car.carModel}</div>
                     <div className="carTrim">{car.carTrim}</div>
                   </a>
-                </div>
-                <div className="carLove">
-                  <div className="carRating">Rate</div>
-                  <div className="trafficLight">
-                    <button onClick={this.carLoveClicked} className="carButton redLight"><div className="carLoveCount">{this.state.carLoveCount}</div></button>
-                    <button onClick={this.carLoveClicked} className="carButton yellowLight"></button>
-                    <button onClick={this.carLoveClicked} className="carButton greenLight"></button>
-                  </div>
                 </div>
                 <div className="carCredit">
                   <a href={car.carSoundCreditLink}>{car.carSoundCredit}</a>

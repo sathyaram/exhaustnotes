@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import Car from "../Car/Car";
-import axios from "axios";
 import Search from '../Search/Search';
-
-
-const api = (process.env.REACT_APP_API === undefined) ? 'http://localhost:3500' : process.env.REACT_APP_API;
+import cars from './../cars.json';
 
 class CarGrid extends Component {
   constructor(props) {
@@ -20,13 +17,9 @@ class CarGrid extends Component {
   }
 
   getCars = () => {
-    axios.get(`${api}/api/cars`).then(res => {
-      this.setState({
-        content: res.data,
-        currentPage: res.data.slice(0, 6),
-      });
-    }).catch(err => {
-      console.log(err);
+    this.setState({
+      content: cars,
+      currentPage: cars.slice(0, 6),
     });
   };
 

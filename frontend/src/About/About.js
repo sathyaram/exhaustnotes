@@ -59,7 +59,7 @@ class About extends Component {
       <div className="about">
       <h3>What is ExhaustNotes?</h3>
       <p>
-        ExhaustNotes is a website where you can browse a collection of distinct sounds a car makes when it revs its engine. The roar of a car exhaust when the accelerator is pushed is a glorious experience and should be appreciated for all its intricacies. On this site, you'll be able to browse many car brands' top car models and hear their exhaust note, as every car is different.
+        ExhaustNotes is a website where you can browse a collection of distinct sounds a car makes when it revs its engine. The roar of a car exhaust when the accelerator is pushed is a glorious experience and should be appreciated for all its intricacies. On this site, you'll be able to browse many car brands' top car models and hear their exhaust note, as every car sound is different and unique.
         <br></br>
         <br></br>
       </p>
