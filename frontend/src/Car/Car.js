@@ -47,7 +47,7 @@ class Car extends Component {
                 aria-label={`${car.carMake} ${car.carModel}`}
               >
                 <Player
-                  streamUrl={car.carSound}
+                  streamUrl={`${process.env.REACT_APP_API}/${car.carSound}`}
                   preloadType="metadata" />
                 <div className="carText">
                   <div className="carYear">{car.carYear}</div>
