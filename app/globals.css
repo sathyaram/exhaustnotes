@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+/* Design tokens carried over from the 2019 build.
+   In Tailwind v4 anything declared here becomes a utility:
+   --color-ember  ->  bg-ember / text-ember / border-ember */
+@theme {
+  --color-ink: #131313;
+  --color-well: #0e0e0e;
+  --color-ember: #f42737;
+  --color-ember-dark: #a51a26;
+  --color-ember-glow: #ff737e;
+  --color-smoke: #474747;
+
+  --font-display: var(--font-alfa), serif;
+  --font-plate: var(--font-bungee), sans-serif;
+  --font-sans: var(--font-rajdhani), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: #fff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* The original had two stacked pseudo-element layers on <body>:
+   a repeating noise texture, and a vignette that darkens the fold. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.45;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 31, 31, 0.4)),
+    url(/images/bgtexture.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-ember);
+}
+
+::selection {
+  background: var(--color-ember);
+  color: #fff;
+}
+
+/* The 2019 signature: two borders race around the card from opposite corners.
+   ::before draws top-then-right, ::after waits, then draws bottom-then-left. */
+.corner-draw::before,
+.corner-draw::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  pointer-events: none;
+  z-index: 3;
+  /* The retract. Without this the borders snap off the instant the cursor
+     leaves, which is the jank — the draw-in is staggered, the draw-out wasn't. */
+  transition:
+    width 0.18s ease-in,
+    height 0.18s ease-in,
+    border-color 0.18s ease-in;
+}
+.corner-draw::before {
+  top: 0;
+  left: 0;
+}
+.corner-draw::after {
+  bottom: 0;
+  right: 0;
+}
+/* Driven from the card, not the tile, so the whole card is one hover target. */
+.spot:hover .corner-draw::before,
+.spot:hover .corner-draw::after,
+.spot[data-lit="true"] .corner-draw::before,
+.spot[data-lit="true"] .corner-draw::after {
+  width: 100%;
+  height: 100%;
+}
+.spot:hover .corner-draw::before,
+.spot[data-lit="true"] .corner-draw::before {
+  border-top-color: var(--color-ember);
+  border-right-color: var(--color-ember);
+  transition:
+    width 0.12s ease-out,
+    height 0.12s ease-out 0.12s;
+}
+.spot:hover .corner-draw::after,
+.spot[data-lit="true"] .corner-draw::after {
+  border-bottom-color: var(--color-ember);
+  border-left-color: var(--color-ember);
+  transition:
+    border-color 0s ease-out 0.24s,
+    width 0.16s ease-out 0.24s,
+    height 0.12s ease-out 0.4s;
+}
+
+/* Grid spotlight: everything dims, the hovered card stays lit.
+   Faster than the card's own transitions so the dim never feels laggy. */
+@media (hover: hover) {
+  .spotlight .spot {
+    transition: opacity 0.25s ease;
+  }
+  .spotlight:hover .spot {
+    opacity: 0.45;
+  }
+  .spotlight .spot:hover,
+  .spotlight .spot[data-lit="true"] {
+    opacity: 1;
+  }
+}
+
+input:focus {
+  outline: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
