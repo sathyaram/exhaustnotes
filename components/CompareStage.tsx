@@ -198,11 +198,13 @@ function Panel({
         imageClassName="transition-[filter,transform] duration-700"
         imageStyle={{
           // The louder side of the crossfade is the one in colour.
-          filter: `grayscale(${1 - weight}) saturate(${0.4 + weight * 0.6}) brightness(${0.45 + weight * 0.35})`,
+          filter: `grayscale(${(1 - weight) * 0.85}) saturate(${0.5 + weight * 0.5}) brightness(${0.68 + weight * 0.42})`,
           transform: `scale(${1 + level * 0.04})`,
         }}
       />
-      <span className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/25" />
+      {/* Enough scrim to keep the copy legible, not so much that the car
+          disappears — the photo is half the point of this view. */}
+      <span className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
 
       <div className="relative">
         <p className="font-plate text-[11px] uppercase tracking-[0.2em] text-ember">
