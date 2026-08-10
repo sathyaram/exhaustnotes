@@ -21,7 +21,12 @@ const rajdhani = Rajdhani({
   subsets: ["latin"],
 });
 
+// Embedded, the site lives at sathyaram.com/exhaustnotes; this is what makes
+// the OpenGraph image URL absolute rather than relative to localhost.
+const SITE_URL = "https://sathyaram.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Exhaust Notes — hear and compare the cars that sound like something",
     template: "%s — Exhaust Notes",

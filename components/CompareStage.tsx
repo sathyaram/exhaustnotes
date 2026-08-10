@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useAudio, useVoiceMeter } from "./AudioEngine";
 import PhotoStack from "./PhotoStack";
+import { comparePath } from "./CompareRoute";
 import { engineLabel, photosFor, type Car } from "@/lib/cars";
 
 /** Playback-rate limits. 1.0 is the recording untouched. */
@@ -14,10 +15,12 @@ export default function CompareStage({
   a,
   b,
   all,
+  onSwap,
 }: {
   a: Car;
   b: Car;
   all: Car[];
+  onSwap: () => void;
 }) {
   const { play, stopAll, setGain, setRate, playing, loading, preload } = useAudio();
   const [mix, setMix] = useState(0.5);
@@ -95,12 +98,13 @@ export default function CompareStage({
         >
           ← All cars
         </Link>
-        <Link
-          href={`/compare/${b.id}-vs-${a.id}`}
-          className="font-plate text-[11px] uppercase tracking-[0.2em] text-white/45 transition hover:text-ember"
+        <button
+          type="button"
+          onClick={onSwap}
+          className="cursor-pointer font-plate text-[11px] uppercase tracking-[0.2em] text-white/45 transition hover:text-ember"
         >
           Swap sides ⇄
-        </Link>
+        </button>
       </nav>
 
       <div className="grid flex-1 grid-cols-1 md:grid-cols-2">
@@ -366,7 +370,7 @@ function MoreMatchups({ current, all }: { current: string[]; all: Car[] }) {
           return (
             <Link
               key={`${x}-${y}`}
-              href={`/compare/${x}-vs-${y}`}
+              href={comparePath(x, y)}
               className="group rounded-sm border border-white/10 p-5 transition hover:border-ember hover:bg-white/5"
             >
               <p className="font-plate text-xs uppercase leading-snug tracking-wide transition group-hover:text-ember">

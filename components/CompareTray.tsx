@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCompare } from "./CompareContext";
+import { comparePath } from "./CompareRoute";
 import { carById, fullName } from "@/lib/cars";
 
 /**
@@ -69,7 +70,7 @@ export default function CompareTray() {
               Clear
             </button>
             <Link
-              href={isFull ? `/compare/${selected.join("-vs-")}` : "#"}
+              href={isFull ? comparePath(selected[0], selected[1]) : "#"}
               aria-disabled={!isFull}
               tabIndex={isFull ? 0 : -1}
               className={`rounded-sm px-6 py-3 font-plate text-xs uppercase tracking-wider transition-all duration-300 ${

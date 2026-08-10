@@ -1,5 +1,6 @@
 "use client";
 
+import { asset } from "@/lib/assets";
 import {
   createContext,
   useCallback,
@@ -66,7 +67,9 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
     (url: string) => {
       let pending = buffers.current.get(url);
       if (!pending) {
-        pending = fetch(url)
+        // asset() applies the deploy's base path; fetch() gets no such help
+        // from Next the way next/image does.
+        pending = fetch(asset(url))
           .then((r) => r.arrayBuffer())
           .then((b) => audioCtx().decodeAudioData(b));
         buffers.current.set(url, pending);

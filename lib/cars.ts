@@ -52,7 +52,7 @@ export const cars: Car[] = [
     ],
     "signature": "A flat-plane crank in a Mustang — Ferrari's firing order wearing a pony badge. Sounds wrong in the best way.",
     "image": "/images/mustang.jpg",
-    "sound": "/sounds/shelbygt350.mp3",
+    "sound": "/sounds/shelbygt350.m4a",
     "link": "https://www.ford.com/performance/gt350/",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -84,7 +84,7 @@ export const cars: Car[] = [
     ],
     "signature": "Five cylinders means an uneven, loping warble no V-engine can fake. Direct descendant of the Group B Quattro.",
     "image": "/images/audittrs.jpg",
-    "sound": "/sounds/audittrs.mp3",
+    "sound": "/sounds/audittrs.m4a",
     "link": "https://www.audiusa.com/models/audi-tt-rs",
     "imageCredit": {
       "name": "Unsplash",
@@ -116,7 +116,7 @@ export const cars: Car[] = [
     ],
     "signature": "Deliberately buttoned-up. The turbos eat the top end and leave a deep, expensive hum.",
     "image": "/images/panamaraturbo.jpg",
-    "sound": "/sounds/panamaraturbo.mp3",
+    "sound": "/sounds/panamaraturbo.m4a",
     "link": "https://www.porsche.com/usa/models/panamera/panamera-turbo-models/",
     "imageCredit": {
       "name": "Unsplash",
@@ -148,7 +148,7 @@ export const cars: Car[] = [
     ],
     "signature": "A boxer four with nothing to hide behind. Coarse, buzzy, and completely honest about its 205hp.",
     "image": "/images/toyota86.jpg",
-    "sound": "/sounds/toyota86.mp3",
+    "sound": "/sounds/toyota86.m4a",
     "link": "https://www.toyota.com/86/",
     "imageCredit": {
       "name": "Unsplash",
@@ -179,8 +179,8 @@ export const cars: Car[] = [
       "inline-six"
     ],
     "signature": "Textbook inline-six smoothness, partially piped through the speakers. Purists have opinions.",
-    "image": "/images/bmwm4.png",
-    "sound": "/sounds/m4.mp3",
+    "image": "/images/bmwm4.jpg",
+    "sound": "/sounds/m4.m4a",
     "link": "https://www.bmwusa.com/vehicles/4-series/m4/overview.html",
     "imageCredit": {
       "name": "Unsplash",
@@ -211,8 +211,8 @@ export const cars: Car[] = [
       "american"
     ],
     "signature": "Cross-plane V8 rumble with a supercharger whine laid over the top like a second instrument.",
-    "image": "/images/camaro.png",
-    "sound": "/sounds/camarozl1.mp3",
+    "image": "/images/camaro.jpg",
+    "sound": "/sounds/camarozl1.m4a",
     "link": "https://www.chevrolet.com/performance/camaro-zl1-sports-car",
     "imageCredit": {
       "name": "Unsplash",
@@ -243,8 +243,8 @@ export const cars: Car[] = [
       "exotic"
     ],
     "signature": "Ten cylinders, no turbos, 8,500rpm. The last generation of Lamborghini that screams instead of thumps.",
-    "image": "/images/lamhur.png",
-    "sound": "/sounds/huracan.mp3",
+    "image": "/images/lamhur.jpg",
+    "sound": "/sounds/huracan.m4a",
     "link": "https://www.lamborghini.com/en-en/models/huracan",
     "imageCredit": {
       "name": "Unsplash",
@@ -275,8 +275,8 @@ export const cars: Car[] = [
       "hatch"
     ],
     "signature": "Modest and a little synthetic — but the benchmark everyone else's hot hatch gets measured against.",
-    "image": "/images/golfgti.png",
-    "sound": "/sounds/golfgti.mp3",
+    "image": "/images/golfgti.jpg",
+    "sound": "/sounds/golfgti.m4a",
     "link": "https://www.vw.com/models/golf-gti/section/overview/",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -308,7 +308,7 @@ export const cars: Car[] = [
     ],
     "signature": "More machinery than music. Turbo whoosh, transmission clatter, and a V6 that sounds like it has a job to do.",
     "image": "/images/gtr.jpg",
-    "sound": "/sounds/nissangtr.mp3",
+    "sound": "/sounds/nissangtr.m4a",
     "link": "https://www.nissanusa.com/vehicles/sports-cars/gt-r.html",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -340,7 +340,7 @@ export const cars: Car[] = [
     ],
     "signature": "Lexus tuned this one by ear, with acoustic engineers. A naturally aspirated V8 held onto long after everyone else quit.",
     "image": "/images/lc500.jpg",
-    "sound": "/sounds/lc500.mp3",
+    "sound": "/sounds/lc500.m4a",
     "link": "https://www.lexus.com/models/LC",
     "imageCredit": {
       "name": "Unsplash",
@@ -372,7 +372,7 @@ export const cars: Car[] = [
     ],
     "signature": "Pushrod V8, two valves per cylinder, technology from another era — and a burble nothing modern replicates.",
     "image": "/images/corvette.jpg",
-    "sound": "/sounds/corvette.mp3",
+    "sound": "/sounds/corvette.m4a",
     "link": "https://www.chevrolet.com/performance/corvette-stingray-sports-car",
     "imageCredit": {
       "name": "Unsplash",
@@ -404,7 +404,7 @@ export const cars: Car[] = [
     ],
     "signature": "The supercharger whine is the whole personality. 707hp of deliberately unsubtle theatre.",
     "image": "/images/challenger.jpg",
-    "sound": "/sounds/hellcat.mp3",
+    "sound": "/sounds/hellcat.m4a",
     "link": "https://www.dodge.com/challenger/srt.html",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -436,7 +436,7 @@ export const cars: Car[] = [
     ],
     "signature": "Hot-V turbos tucked inside the vee. A four-door that overruns and crackles like it's getting away with something.",
     "image": "/images/e63.jpg",
-    "sound": "/sounds/e63.mp3",
+    "sound": "/sounds/e63.m4a",
     "link": "https://www.mbusa.com/en/vehicles/model/e-class/wagon/e63s4s",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -468,7 +468,7 @@ export const cars: Car[] = [
     ],
     "signature": "A twin-turbo V6 in a car whose ancestor had a 7-litre V8. It won Le Mans anyway. Listen before you judge.",
     "image": "/images/fordgt.jpg",
-    "sound": "/sounds/fordgt.mp3",
+    "sound": "/sounds/fordgt.m4a",
     "link": "https://www.ford.com/performance/gt/",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -500,7 +500,7 @@ export const cars: Car[] = [
     ],
     "signature": "The one nobody expected on this list. A Kia with a proper twin-turbo six and a genuinely good voice.",
     "image": "/images/stinger.jpg",
-    "sound": "/sounds/stinger.mp3",
+    "sound": "/sounds/stinger.m4a",
     "link": "https://www.kia.com/us/en/vehicle/stinger/2018/overview",
     "imageCredit": {
       "name": "@Car&Driver",
@@ -532,7 +532,7 @@ export const cars: Car[] = [
     ],
     "signature": "Flat-plane V8 spinning to 8,200 with turbos muting it. Hollow, mechanical, more spaceship than car.",
     "image": "/images/720s.jpg",
-    "sound": "/sounds/720s.mp3",
+    "sound": "/sounds/720s.m4a",
     "link": "https://cars.mclaren.com/super-series/720s",
     "imageCredit": {
       "name": "Jeff Ludes",
@@ -564,7 +564,7 @@ export const cars: Car[] = [
     ],
     "signature": "The Huracán's engine with German manners. Same ten cylinders, less hysteria, cleaner edges.",
     "image": "/images/audir8.jpg",
-    "sound": "/sounds/audir8.mp3",
+    "sound": "/sounds/audir8.m4a",
     "link": "https://www.audiusa.com/models/audi-r8",
     "imageCredit": {
       "name": "Motor1",
@@ -596,7 +596,7 @@ export const cars: Car[] = [
     ],
     "signature": "A Ferrari-derived V8 with a cross-plane crank and an exhaust tuned like an instrument. Widely considered the best-sounding GT ever built.",
     "image": "/images/maseratigt.jpg",
-    "sound": "/sounds/maseratigt.mp3",
+    "sound": "/sounds/maseratigt.m4a",
     "link": "https://www.maseratiusa.com/maserati/us/en/models/granturismo",
     "imageCredit": {
       "name": "WhichCar",
@@ -628,7 +628,7 @@ export const cars: Car[] = [
     ],
     "signature": "Hyundai hired the ex-BMW M boss and let him tune the overrun. It pops and bangs like a rally car.",
     "image": "/images/velostern.jpg",
-    "sound": "/sounds/velostern.mp3",
+    "sound": "/sounds/velostern.m4a",
     "link": "https://www.hyundaiusa.com/veloster-n",
     "imageCredit": {
       "name": "AutoWeek",
@@ -660,7 +660,7 @@ export const cars: Car[] = [
     ],
     "signature": "Essentially a Ferrari V8 with two cylinders removed. Hard-edged and slightly unhinged for a sedan.",
     "image": "/images/giulia.jpg",
-    "sound": "/sounds/giulia.mp3",
+    "sound": "/sounds/giulia.m4a",
     "link": "https://www.alfaromeousa.com/cars/giulia/quadrifoglio",
     "imageCredit": {
       "name": "GearPatrol",
@@ -692,7 +692,7 @@ export const cars: Car[] = [
     ],
     "signature": "The last naturally aspirated mid-engine Ferrari V8. 9,000rpm. This is the reference recording on this site.",
     "image": "/images/ferrari458.jpg",
-    "sound": "/sounds/ferrari458.mp3",
+    "sound": "/sounds/ferrari458.m4a",
     "link": "https://auto.ferrari.com/en_US/sports-cars-models/past-models/458-speciale/",
     "imageCredit": {
       "name": "Zadart",
@@ -724,7 +724,7 @@ export const cars: Car[] = [
     ],
     "signature": "Corvette supercharged V8 in a Cadillac suit. Deep, blown, and faintly menacing.",
     "image": "/images/ctsv.jpg",
-    "sound": "/sounds/ctsv.mp3",
+    "sound": "/sounds/ctsv.m4a",
     "link": "https://www.cadillac.com/v-series/cts-v-sedan",
     "imageCredit": {
       "name": "MotorTrend",
@@ -756,7 +756,7 @@ export const cars: Car[] = [
     ],
     "signature": "Yamaha's musical instrument division voiced this engine. Ten cylinders, 0-9,000rpm in 0.6 seconds, and the most famous sound in modern car culture.",
     "image": "/images/lexuslfa.jpg",
-    "sound": "/sounds/lexuslfa.mp3",
+    "sound": "/sounds/lexuslfa.m4a",
     "link": "https://en.wikipedia.org/wiki/Lexus_LFA",
     "imageCredit": {
       "name": "RaY29rus",
@@ -788,7 +788,7 @@ export const cars: Car[] = [
     ],
     "signature": "Jaguar aimed the exhaust valves at drama and let it crackle on overrun. Deeply un-British behaviour.",
     "image": "/images/ftype.jpg",
-    "sound": "/sounds/ftype.mp3",
+    "sound": "/sounds/ftype.m4a",
     "link": "https://www.jaguarusa.com/all-models/f-type/index.html",
     "imageCredit": {
       "name": "RaY29rus",
@@ -820,7 +820,7 @@ export const cars: Car[] = [
     ],
     "signature": "Twelve cylinders you feel more than hear. Bentley spent the engineering budget on keeping it out of the cabin.",
     "image": "/images/continentalgt.jpg",
-    "sound": "/sounds/continentalgt.mp3",
+    "sound": "/sounds/continentalgt.m4a",
     "link": "https://www.bentleymotors.com/en/models/new-continental/new-continental-gt.html",
     "imageCredit": {
       "name": "Edmunds",
@@ -852,7 +852,7 @@ export const cars: Car[] = [
     ],
     "signature": "The E63's engine with the manners removed. Barks, crackles, and settles into a hard idle.",
     "image": "/images/amggtr.jpg",
-    "sound": "/sounds/amggtr.mp3",
+    "sound": "/sounds/amggtr.m4a",
     "link": "https://www.mbusa.com/mercedes/vehicles/model/class-GT/model-GTR",
     "imageCredit": {
       "name": "Unsplash",
@@ -884,7 +884,7 @@ export const cars: Car[] = [
     ],
     "signature": "Not the fastest car here and it doesn't matter. A naturally aspirated British V8 with a bypass valve and perfect timing.",
     "image": "/images/vantage2010.jpg",
-    "sound": "/sounds/vantage2010.mp3",
+    "sound": "/sounds/vantage2010.m4a",
     "link": "https://www.astonmartin.com/en-us/models/new-vantage",
     "imageCredit": {
       "name": "JLSTMS",
@@ -916,7 +916,7 @@ export const cars: Car[] = [
     ],
     "signature": "Eight point four litres. Ten cylinders. Side pipes. Sounds less like an engine than a controlled industrial accident.",
     "image": "/images/viper.jpg",
-    "sound": "/sounds/viper.mp3",
+    "sound": "/sounds/viper.m4a",
     "link": "https://www.dodge.com/viper.html",
     "imageCredit": {
       "name": "Cars.com",
@@ -948,7 +948,7 @@ export const cars: Car[] = [
     ],
     "signature": "Flat-six architecture buried under two turbos. Thin, hard, and slightly frightening — as intended.",
     "image": "/images/911gt2rs.jpg",
-    "sound": "/sounds/911gt2rs.mp3",
+    "sound": "/sounds/911gt2rs.m4a",
     "link": "https://www.porsche.com/usa/models/911/911-gt2-rs/911-gt2-rs/",
     "imageCredit": {
       "name": "Kyle Fletcher",
@@ -980,7 +980,7 @@ export const cars: Car[] = [
     ],
     "signature": "A four-cylinder with a mischief mode. The overrun pops are pure calibration, and pure fun.",
     "image": "/images/focusrs.jpg",
-    "sound": "/sounds/focusrs.mp3",
+    "sound": "/sounds/focusrs.m4a",
     "link": "https://www.ford.com",
     "imageCredit": {
       "name": "Justin Chan",
