@@ -1,10 +1,15 @@
 /**
  * Prefix a public/ path with the deploy's base path.
  *
- * next/image does this to `src` automatically, so images don't need it. A bare
- * fetch() doesn't — and the audio engine fetches clips itself — so anything
- * loaded that way has to go through here or it will 404 when the app is served
- * from sathyaram.com/exhaustnotes rather than the root.
+ * Everything that loads a file by URL needs this. next/image only rewrites
+ * `src` when its optimiser is in play — under `unoptimized: true`, which a
+ * static export requires, the path is passed through untouched. fetch() never
+ * gets any help. So both the <Image> srcs and the audio engine's clip fetches
+ * go through here, or they 404 when served from sathyaram.com/exhaustnotes
+ * instead of the root.
+ *
+ * Apply it at the point of render, once — double-prefixing is the failure mode
+ * to watch for, not a missing prefix, which is at least loud.
  */
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 

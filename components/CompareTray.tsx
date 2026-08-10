@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCompare } from "./CompareContext";
 import { comparePath } from "./CompareRoute";
+import { asset } from "@/lib/assets";
 import { carById, fullName } from "@/lib/cars";
 
 /**
@@ -38,7 +39,7 @@ export default function CompareTray() {
                 className="group flex cursor-pointer items-center gap-3 rounded-sm bg-white/5 py-1.5 pl-1.5 pr-3 transition hover:bg-white/10"
               >
                 <span className="relative size-10 overflow-hidden rounded-sm">
-                  <Image src={car!.image} alt="" fill sizes="40px" className="object-cover" />
+                  <Image src={asset(car!.image)} alt="" fill sizes="40px" className="object-cover" />
                 </span>
                 <span className="text-left">
                   <span className="block font-sans text-sm font-semibold leading-tight">

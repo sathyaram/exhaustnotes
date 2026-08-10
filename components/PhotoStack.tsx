@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { asset } from "@/lib/assets";
 import type { Photo } from "@/lib/cars";
 
 /**
@@ -60,7 +61,7 @@ export default function PhotoStack({
       {photos.map((photo, i) => (
         <Image
           key={photo.src}
-          src={photo.src}
+          src={asset(photo.src)}
           alt=""
           fill
           sizes={sizes}

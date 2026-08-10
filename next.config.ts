@@ -10,9 +10,10 @@ import type { NextConfig } from "next";
  *   npm run build                              # standalone
  *   EMBED_BASE_PATH=/exhaustnotes npm run build  # embedded
  *
- * next/image applies basePath to `src` on its own, but a bare fetch() does
- * not — and the audio engine fetches its clips directly. That's why the prefix
- * is also exposed as NEXT_PUBLIC_BASE_PATH for lib/assets.ts to read.
+ * Next prefixes its own chunks from basePath, but nothing prefixes a path we
+ * write ourselves: fetch() never does, and next/image only does it via its
+ * optimiser, which `unoptimized: true` turns off. Both the clip fetches and the
+ * <Image> srcs go through lib/assets.ts, which reads NEXT_PUBLIC_BASE_PATH.
  */
 const basePath = process.env.EMBED_BASE_PATH;
 
