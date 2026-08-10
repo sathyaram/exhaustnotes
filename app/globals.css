@@ -29,7 +29,12 @@ body {
 }
 
 /* The original had two stacked pseudo-element layers on <body>:
-   a repeating noise texture, and a vignette that darkens the fold. */
+   a repeating noise texture, and a vignette that darkens the fold.
+
+   The texture is imported relatively rather than sitting in public/ so the
+   bundler emits it with the deploy's asset prefix. A url(/images/...) would
+   resolve against the portfolio root once this is served from a sub-path,
+   and CSS gets no equivalent of lib/assets.ts. */
 body::after {
   content: "";
   position: fixed;
@@ -38,7 +43,7 @@ body::after {
   opacity: 0.45;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 31, 31, 0.4)),
-    url(/images/bgtexture.png);
+    url("./bgtexture.png");
   background-attachment: fixed;
   background-repeat: repeat;
   pointer-events: none;
