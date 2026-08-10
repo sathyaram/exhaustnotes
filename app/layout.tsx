@@ -35,8 +35,8 @@ const SITE_URL = `https://sathyaram.com${basePath}`;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Exhaust Notes — hear and compare the cars that sound like something",
-    template: "%s — Exhaust Notes",
+    default: "Exhaust Notes: hear and compare the cars that sound like something",
+    template: "%s · Exhaust Notes",
   },
   description:
     "A curated collection of real exhaust recordings. Play any two cars side by side and hear exactly what a flat-plane crank, a supercharger, or 9,000rpm actually does.",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Exhaust Notes",
     description:
-      "Thirty real exhaust recordings. Play any two cars side by side and hear why they differ — curation, not a simulator.",
+      "Thirty real exhaust recordings. Play any two cars side by side and hear why they differ. Curation, not a simulator.",
     type: "website",
     url: SITE_URL,
     images: [{ url: `${SITE_URL}/og-exhaustnotes.png`, width: 1826, height: 1048 }],
