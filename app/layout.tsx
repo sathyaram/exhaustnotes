@@ -21,9 +21,16 @@ const rajdhani = Rajdhani({
   subsets: ["latin"],
 });
 
-// Embedded, the site lives at sathyaram.com/exhaustnotes; this is what makes
-// the OpenGraph image URL absolute rather than relative to localhost.
-const SITE_URL = "https://sathyaram.com";
+// Embedded, the site lives at sathyaram.com/exhaustnotes — and the base path
+// has to be part of every absolute URL below, not just of metadataBase.
+//
+// A root-relative "/og-exhaustnotes.png" resolves against the ORIGIN of
+// metadataBase, so it came out as sathyaram.com/og-exhaustnotes.png: the
+// portfolio's root, where the file isn't, and a 404 for every scraper. The
+// favicon had the same shape of bug. Both are spelled out in full below
+// instead, which is the only form that survives being served from a sub-path.
+const basePath = process.env.EMBED_BASE_PATH ?? "";
+const SITE_URL = `https://sathyaram.com${basePath}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -33,20 +40,21 @@ export const metadata: Metadata = {
   },
   description:
     "A curated collection of real exhaust recordings. Play any two cars side by side and hear exactly what a flat-plane crank, a supercharger, or 9,000rpm actually does.",
-  icons: { icon: "/favicon.png" },
+  icons: { icon: `${basePath}/favicon.png` },
   openGraph: {
     title: "Exhaust Notes",
     description:
       "Thirty real exhaust recordings. Play any two cars side by side and hear why they differ — curation, not a simulator.",
     type: "website",
-    images: [{ url: "/og-exhaustnotes.png", width: 1826, height: 1048 }],
+    url: SITE_URL,
+    images: [{ url: `${SITE_URL}/og-exhaustnotes.png`, width: 1826, height: 1048 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Exhaust Notes",
     description:
       "Thirty real exhaust recordings, played side by side. Curation, not a simulator.",
-    images: ["/og-exhaustnotes.png"],
+    images: [`${SITE_URL}/og-exhaustnotes.png`],
   },
 };
 
